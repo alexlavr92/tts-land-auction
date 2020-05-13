@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Посадочная страница</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="keywords" content="ТТС">
+<meta name="description" content="ТТС">
+<meta name="viewport" content="minimum-scale=1.0, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="320">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<!--Select2 CSS-->
+<link rel="stylesheet" type="text/css" href="./css/select2.min.css">
+<!--Swiper CSS-->
+<link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+<!--LightGallery CSS-->
+<link rel="stylesheet" type="text/css" href="./css/lightgallery.min.css">
+<!--ToolTip CSS-->
+<link rel="stylesheet" type="text/css" href="./css/tooltipster.bundle.min.css">
+<link rel="stylesheet" type="text/css" href="./css/tooltipster-sideTip-shadow.min.css">
+<!--Modal CSS-->
+<link rel="stylesheet" type="text/css" href="./css/jquery.modal.min.css">
+<!--Scrollbar CSS-->
+<link rel="stylesheet" type="text/css" href="./css/jquery.custom-scrollbar.css">
+<!--Custom CSS-->
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+    <svg aria-hidden = "true" style ="width: 0; height: 0; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg" xmlns= "http://www.w3.org/1999/xlink" version="1.1">>
+        <symbol id="like-icon" viewBox="0 0 27 24">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.0127C3.47849 1.0127 0.392496 4.56444 1.10209 9.66228C1.71793 14.0866 12.3223 22.9211 13.5 22.9211C14.6777 22.9211 25.2821 14.0866 25.8979 9.66228C26.6075 4.56433 23.5215 1.0127 19.6334 1.0127C17.0414 1.0127 15.0222 2.09796 13.5 4.26848C11.9778 2.09796 9.9586 1.0127 7.36656 1.0127Z"></path>
+        </symbol>
+        <symbol id="share-icon" viewBox="0 0 19 20">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.25 0.0078125C14.4875 0.0078125 13.7562 0.309457 13.2171 0.846388C12.6779 1.38332 12.375 2.11155 12.375 2.87089C12.3756 3.05045 12.3931 3.22956 12.4274 3.40585L5.60864 7.36681C5.08928 6.92867 4.43067 6.68824 3.75 6.68832C2.9875 6.68832 2.25624 6.98996 1.71707 7.52689C1.1779 8.06382 0.875 8.79206 0.875 9.55139C0.875 10.3107 1.1779 11.039 1.71707 11.5759C2.25624 12.1128 2.9875 12.4145 3.75 12.4145C4.42961 12.4131 5.08678 12.1721 5.6049 11.7341L12.4274 15.6969C12.3931 15.8732 12.3756 16.0523 12.375 16.2319C12.375 16.9912 12.6779 17.7195 13.2171 18.2564C13.7562 18.7933 14.4875 19.095 15.25 19.095C16.0125 19.095 16.7438 18.7933 17.2829 18.2564C17.8221 17.7195 18.125 16.9912 18.125 16.2319C18.125 15.4726 17.8221 14.7443 17.2829 14.2074C16.7438 13.6705 16.0125 13.3688 15.25 13.3688C14.5697 13.3697 13.9118 13.6108 13.3932 14.0492L6.57259 10.0864C6.60687 9.91006 6.62441 9.73096 6.625 9.55139C6.62441 9.37183 6.60687 9.19272 6.57259 9.01643L13.3914 5.05547C13.9107 5.49361 14.5693 5.73404 15.25 5.73396C16.0125 5.73396 16.7438 5.43232 17.2829 4.89539C17.8221 4.35845 18.125 3.63022 18.125 2.87089C18.125 2.11155 17.8221 1.38332 17.2829 0.846388C16.7438 0.309457 16.0125 0.0078125 15.25 0.0078125Z"></path>
+        </symbol>
+    </svg>
+        
+    <header class = "header">
+        <div class="new-container header-land flex-block" itemscope itemtype="http://schema.org/Organization">
+            <div class="header-land__logo flex-block">
+                <meta itemprop="name" content="ТрансТехСервис">
+                <a href="/land/" class="logo__img header-land__logo--img" itemprop="url"></a>
+                <meta itemprop="logo" content="http://new-tts.tw1.ru/land/img/logo.svg">
+                <div class="header-land__dealer" itemprop="description" content="Официальный дилер BMW">Официальный дилер<br> BMW</div>
+            </div>
+            <div class="header-land__address flex-block" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+             <!-- Хедер с открытым номером и выбранным автосалоном -->
+              <!--   <div class="header-land__address--location flex-block with-salon">
+                    <span class="city" itemprop="addressLocality">Набережные челны,</span>
+                    <span class="address-salon" itemprop="streetAddress">Автодорога, №1</span>
+                </div>
+                <a href="tel:+7(8552)910562" class="header-land__address--tel with-phone"  itemprop="telephone">+7 (8552) 91-05-62</a> -->
+             <!-- Конец тегов для хедера с открытым номером и автосалоном -->    
+            <!-- Хедер с закрытым номером и селектом для выбора автосалона -->
+                <div class="header-land__address--location">
+                    <span class="city" itemprop="addressLocality">Набережные челны</span>
+                </div>
+                <div class = "header-land__address--autosalon-select">
+                    <select class="select-default">
+                        <option>Автосалон</option>
+                        <option itemprop="streetAddress" title="Автодорога №1 Автодорога №1 Автодорога №1">Автодорога №1 Автодорога №1 Автодорога №1</option>
+                        <option itemprop="streetAddress" title="Автодорога №2">Автодорога №2</option>
+                        <option itemprop="streetAddress" title="Автодорога №3">Автодорога №3</option>
+                    </select>
+                </div>
+                <div class="header-land__address--tel" itemprop="telephone" itemscope itemtype="http://schema.org/Organization">+7 (***) ***-**-**</div>
+                 <!-- Конец Хедера с закрытым номером и селектом для выбора автосалона -->
+            </div>
+            <a href="#request-modal" class="btn-blue header-land__btn-blue modal-click" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">Оставить заявку</a>
+        </div>
+    </header>
+    <main>
+        <section class="grey top">
+            <div class="new-container offer-block-main flex-block" itemscope itemtype="http://schema.org/Product">
+                <div class="offer-block-main__slider"> 
+                    <div class="top-slider main-offer-slider swiper-container">
+                        <div class="swiper-wrapper lightgallery">
+                            <a href="./img/bmwX6.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                <img src="./img/bmwX6.jpg" class="slide-img" alt="" />
+                            </a>
+                            <a href="./img/bmwX6-2.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                <img src="./img/bmwX6-2.jpg" class="slide-img" alt="" />
+                            </a>
+                             <a href="./img/bmwX6-3.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                <img src="./img/bmwX6-3.jpg" class="slide-img" alt="" />
+                            </a>
+                            <a href="./img/bmwX6-4.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                <img src="./img/bmwX6-4.jpg" class="slide-img" alt="" />
+                            </a>
+                            <a href="./img/bmwX6-5.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                <img src="./img/bmwX6-5.jpg" class="slide-img" alt="" />
+                            </a>
+                            <a href="./img/bmwX6-6.jpg" class="swiper-slide lightgallery__item" itemprop="image"> 
+                                <img src="./img/bmwX6-6.jpg" class="slide-img" alt="" />
+                            </a>
+                            <a href="./img/bmwX6-7.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                <img src="./img/bmwX6-7.jpg" class="slide-img" alt="" />
+                            </a>
+                            <a href="./img/bmwX6-8.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                <img src="./img/bmwX6-8.jpg" class="slide-img" alt="" />
+                            </a>
+                        </div>
+                        <div class="swiper-button swiper-button-next">
+                        </div>
+                        <div class="swiper-button swiper-button-prev">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="offer-block-main__description">
+                    <h2 class="offer-block-main__description--title" itemprop="name">BMW X6 в ТрансТехСервис</h2>
+                    <div class='h2 offer-block-main__description--price' itemprop="offers" itemscope itemtype="http://schema.org/Offer">за <span itemprop="price" class="this-number">4270000 </span><span class="font-w400" itemprop="priceCurrency" content="RUB">₽*</span></div>
+                    <ul class="offer-block-main__description--list">
+                        <li class="li">
+                            <a href="#" class="li__link link" itemprop="description">в кредит от 5,1%</a>
+                        </li>
+                        <li class="li">
+                            <div class="li__span" itemprop="description">выгода по <a href="#" class="link">Трейд-ин</a><br> до <span class="this-number">150000</span> ₽</div>
+                        </li>
+                    </ul>
+                    <div class="offer-block-main__description--timer">
+                        <h4>До конца акции осталось:</h4>
+                        <div id="timer" class="timer__content flex-block">
+                            <div class="timer__inner">
+                                <div class="timer-digit" id="days"></div>
+                                <span class="timer-span">дней</span>
+                            </div>
+                            <span class="timer-colon">:</span>
+                            <div class="timer__inner">
+                                <div class="timer-digit" id="hours"></div>
+                                <span class="timer-span">часов</span>
+                            </div>
+                            <span class="timer-colon">:</span>
+                            <div class="timer__inner">
+                                <div class="timer-digit" id="minutes"></div>
+                                <span class="timer-span">минут</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-block-main__description--button">
+                        <a href="#consultation-modal" class="btn-blue offer-block-main__description--btn-blue modal-click" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">Получить консультацию</a>
+                        <span class="tooltip" data-tooltip-content="#consultation-tooltip"></span>
+                    </div>
+                    <div class="offer-block-main__description--legal">
+                        <a href="javaScript:void(0)" class="legal-link link" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">Купить как юр лицо</a>
+                        <span class="tooltip" data-tooltip-content="#legal-tooltip"></span>
+                    </div>
+                </div>
+                <div class="offer-block-main__nav-slider">
+                    <div class="nav-slider nav-offer-main swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"   >
+                                <img src="./img/bmwX6.jpg" class="slide-img" alt="bmwX6" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmwX6-2.jpg" class="slide-img" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmwX6-3.jpg" class="slide-img" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmwX6-4.jpg" class="slide-img" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmwX6-5.jpg" class="slide-img" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmwX6-6.jpg" class="slide-img" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmwX6-7.jpg" class="slide-img" alt=""/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmwX6-8.jpg" class="slide-img" alt="" />
+                            </div>
+                        </div>
+                        <div class="swiper-button swiper-button-next">
+                            <div class="swiper-button__arrow arrow-next"></div>
+                        </div>
+                        <div class="swiper-button swiper-button-prev">
+                            <div class="swiper-button__arrow arrow-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="white">
+            <div class = "new-container barter">
+                <h3 class="barter__title">Как происходит обмен?</h3>
+                <div class="barter__block flex-block">
+                    <div class="barter__block--single flex-block">
+                        <div class="number">1</div>
+                        <div class="icon auto" style="background-image: url(./icon/view-auto.svg)"></div>
+                        <div class="description">Осмотр автомобиля в нашем сервисном центре</div>
+                    </div>
+                    <div class="barter__block--single flex-block">
+                            <div class="number">2</div>
+                            <div class="icon dollar-icon" style="background-image: url(./icon/dollar-icon.svg)"></div>
+                            <div class="description">Оценка стоимости автомобиля экспертом</div>
+                        </div>
+                        <div class="barter__block--single flex-block">
+                                <div class="number">3</div>
+                                <div class="icon auto" style="background-image: url(./icon/technical-diagnostic.svg)"></div>
+                                <div class="description">Техническая диагностика</div>
+                            </div>
+                            <div class="barter__block--single flex-block">
+                                    <div class="number">4</div>
+                                    <div class="icon hand" style="background-image: url(./icon/hand.svg)"></div>
+                                    <div class="description">Согласование<br>цены с клиентом</div>
+                                </div>
+                </div>
+            </div>
+        </section>
+        <section class="white">
+                <div class="new-container auto-credit offer-block flex-block" itemscope itemtype="http://schema.org/Offer">
+                    <div class="offer-block__img">
+                        <div class="offer-block__img--image" style="background-image: url(./img/repair.jpg)" itemprop="image" content="http://new-tts.tw1.ru/land/img/auto-credit.jpg"></div>
+                    </div>
+                    <div class="offer-block__description">
+                        <h3 class="offer-block__description--title" itemprop="name">Тест-драйв BMW X6</h3>
+                        <div class="offer-block__description--text" itemprop="description">
+                                Мы предлагаем автовладельцам лучший способ экономии при покупке автомобиля. Это trade-in: обмен старого авто на новый с доплатой. Эта программа дает возможность, во-первых, выиграть в финансовом отношении, во-вторых, избавиться от хлопот при продаже старого транспортного средства.<br><br> Приобретая новую или б/у модель в любом автосалоне «ТрансТехСервис», вы можете вычесть из ее цены стоимость вашего автомобиля. Вам нужно лишь доставить его к нам, остальное компания «ТрансТехСервис» берет на себя.
+                        </div>
+                        <div class="offer-block__form">
+                            <a href="#repair-modal" class="btn-blue form__body--btn-blue modal-click" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">Записаться на ремонт </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <section class="grey">
+            <div class="new-container dealer-conditions">
+                <h3 class="dealer-conditions__title">Условия официального дилера</h3>
+                <div class="dealer-conditions__block bounce-block flex-block">      
+                    <div class="bounce-block__single flex-block">
+                        <div class="bounce-block__single--group flex-block">
+                            <div class="bounce1 flex-block">
+                                <div class="bounce2 flex-block">
+                                    <div class="bounce3 flex-block ">1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bounce-block__single--text">Сохранение гарантии изготовителя</div>
+                    </div>
+                    <div class="bounce-block__single flex-block">
+                        <div class="bounce-block__single--group flex-block">
+                            <div class="bounce1 flex-block">
+                                <div class="bounce2 flex-block">
+                                    <div class="bounce3 flex-block ">2</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bounce-block__single--text">Сертифицированный сервис BMW</div>
+                    </div>
+                    <div class="bounce-block__single flex-block">
+                            <div class="bounce-block__single--group flex-block">
+                                <div class="bounce1 flex-block">
+                                    <div class="bounce2 flex-block">
+                                        <div class="bounce3 flex-block ">3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bounce-block__single--text">Более 160 BMW в наличии с ПТС</div>
+                        </div>
+                        <div class="bounce-block__single flex-block">
+                                <div class="bounce-block__single--group flex-block">
+                                    <div class="bounce1 flex-block">
+                                        <div class="bounce2 flex-block">
+                                            <div class="bounce3 flex-block ">4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bounce-block__single--text">Доступна любая комплектация/расцветка</div>
+                            </div>
+                </div>
+            </div>
+        </section>
+        <section class="white">
+            <div class="new-container price-tech">
+                <h3 class="price-tech__title">Стоимость эконом ТО</h3>
+                <div class="price-tech__marks flex-block">
+                    <a href="javascript:void(0)" class="price-tech__marks--single active">
+                        <div class="background-container"> 
+                            <div class="mark-logo" style="background-image: url(./img/marks/ford_logo.svg)"></div>
+                            <div class="mark-name">Ford</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container">
+                            <div class="mark-logo" style="background-image: url(./img/marks/bmw_logo.svg)"></div>
+                            <div class="mark-name">BMW</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container">
+                            <div class="mark-logo" style="background-image: url(./img/marks/audi_logo.svg)"></div>
+                            <div class="mark-name">Audi</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container">
+                            <div class="mark-logo" style="background-image: url(./img/marks/chevrolet_logo.svg)"></div>
+                            <div class="mark-name">Chevrolet</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container">
+                            <div class="mark-logo" style="background-image: url(./img/marks/genesis-logo.svg)"></div>
+                            <div class="mark-name">Genesis</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container">
+                            <div class="mark-logo" style="background-image: url(./img/marks/hyundai_logo.svg)"></div>
+                            <div class="mark-name">Hyundai</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container">
+                            <div class="mark-logo" style="background-image: url(./img/marks/jaguar_logo.svg)"></div>
+                            <div class="mark-name">Jaguar</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container">
+                            <div class="mark-logo" style="background-image: url(./img/marks/kia_logo.svg)"></div>
+                            <div class="mark-name">Kia</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container">
+                            <div class="mark-logo" style="background-image: url(./img/marks/lada_logo.svg)"></div>
+                            <div class="mark-name">Lada</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container">
+                            <div class="mark-logo" style="background-image: url(./img/marks/landrover_logo.svg)"></div>
+                            <div class="mark-name">Land Rover</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container">
+                            <div class="mark-logo" style="background-image: url(./img/marks/lexus_logo.svg)"></div>
+                            <div class="mark-name">Lexus</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container"> 
+                            <div class="mark-logo" style="background-image: url(./img/marks/mazda_logo.svg)"></div>
+                            <div class="mark-name">Mazda</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container"> 
+                            <div class="mark-logo" style="background-image: url(./img/marks/mini_logo.svg)"></div>
+                            <div class="mark-name">Mini</div>
+                        </div>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container"> 
+                            <div class="mark-logo" style="background-image: url(./img/marks/mitsubishi_logo.svg)"></div>
+                            <div class="mark-name">Mitsubishi</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container"> 
+                            <div class="mark-logo" style="background-image: url(./img/marks/porsche_logo.svg)"></div>
+                            <div class="mark-name">Porsche</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container"> 
+                            <div class="mark-logo" style="background-image: url(./img/marks/renault_logo.svg)"></div>
+                            <div class="mark-name">Renault</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container"> 
+                            <div class="mark-logo" style="background-image: url(./img/marks/skoda_logo.svg)"></div>
+                            <div class="mark-name">Skoda</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container"> 
+                            <div class="mark-logo" style="background-image: url(./img/marks/subaru_logo.svg)"></div>
+                            <div class="mark-name">Subaru</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container"> 
+                            <div class="mark-logo" style="background-image: url(./img/marks/toyota_logo.svg)"></div>
+                            <div class="mark-name">Toyota</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single">
+                        <div class="background-container"> 
+                            <div class="mark-logo" style="background-image: url(./img/marks/volkswagen_logo.svg)"></div>
+                            <div class="mark-name">Volkswagen</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="price-tech__marks--single allmarks">
+                        <div class="background-container"><span class="allmarks__text">Показать все марки</span></div>
+                    </a>
+            </div>
+                <div class="price-tech__marks--tooltip">
+                        <div class="description">Вы можете смотреть стоимость на эконом ТО выбранных марок авто</div>
+                        <div class="close-tooltip"></div>
+                </div>
+                <table class="price-tech__table">
+                    <thead class="table-head">
+                        <tr class="table-tr">
+                            <th class="table-tr__th">Модель</th>
+                            <th class="table-tr__th">Стоимость обычного ТО, руб.*</th>
+                            <th class="table-tr__th">Стоимость Эконом-ТО, руб.**</th>
+                            <th class="table-tr__th">Экономия</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr class="table-tr">
+                            <td data-title="Модель" class="table-tr__td"><span>Ford Focus 2 1,4;1,6;1,8;2,0</span></td>
+                            <td class="this-number table-tr__td" data-title="Ст-ть обычного ТО, руб*"><span>1629000</span></td>
+                            <td class="this-number table-tr__td" data-title="Ст-ть Эконом-ТО, руб*"><span>1629000</span></td>
+                            <td class="this-number table-tr__td" data-title="Экономия"><span>1629000</span></td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td data-title="Модель" class="table-tr__td"><span>Ford Focus 3 1,6</span></td>
+                            <td class="this-number table-tr__td" data-title="Ст-ть обычного ТО, руб*"><span>488700</span></td>
+                            <td class="this-number table-tr__td" data-title="Ст-ть Эконом-ТО, руб*"><span>488700</span></td>
+                            <td class="this-number table-tr__td" data-title="Экономия"><span>488700</span></td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td data-title="Модель" class="table-tr__td"><span>Платеж</span></td>
+                            <td class="this-number table-tr__td" data-title="Ст-ть обычного ТО, руб*"><span>1610540</span></td>
+                            <td class="this-number table-tr__td" data-title="Ст-ть Эконом-ТО, руб*"><span>1567749</span></td>
+                            <td class="this-number table-tr__td" data-title="Экономия"><span>1567749</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="price-tech__description-table">
+                    <span class="text">* под стоимостью обычного ТО подразумевается стоимость ТО-1 без учета выгоды</span>
+                    <span class="text">**Стоимость Эконом-ТО указанная на сайте является конечной ценой для клиента. Включает в себя техобслуживание с фиксированным перечнем работ и товаров.</span>
+                </div>
+            </div>
+        </section>
+        <section class="white">
+            <div class="new-container how-much">
+                <h3 class="how-much__title">Сколько должна стоить первая машина?</h3>
+                <div class="how-much__description">
+                        Что бы мы не покупали, аспект: дорогой или нет - зависит от возможностей покупателя. Кому-то цена б\у Калины покажется неподъемной, а кто-то может новенькие БМВ менять как перчатки. Но если есть возможность купить большой внедорожник или седан бизнес-класса, почему бы не выбрать машину комфортнее, безопаснее и солиднее?.. Правда такие машины не стоит покупать на последние деньги.
+                </div>
+                <div class="how-much__this-day">Только в этот день</div>
+                <ul class="how-much__list">
+                    <li class="how-much__list--li">специальные условия на покупку автомобилей;</li>
+                    <li class="how-much__list--li"><b>выгода до 200 000 р.</b> на определенные модели Subaru*;</li>
+                    <li class="how-much__list--li">экстремальные <b>тест-драйвы</b>;</li>
+                    <li class="how-much__list--li">увлекательный <b>мастер-класс для детей</b>;</li>
+                    <li class="how-much__list--li">легкий фуршет.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="white">
+            <div class="new-container address-salon">
+                <h3 class="address-salon__title">Адреса салонов</h3> 
+                <div class="address-salon__block flex-block">
+                    <div class="address-salon__block--location">
+                        <div class="background-location flex-block">
+                            <select class="select-default select-city">
+                                <option>Выберите город</option>
+                                <option>Казань, ул. Декабристов, 96</option>
+                                <option>Казань, ул. Техническая, 89</option>
+                                <option>Казань, ул. Новая, 89</option>
+                             </select>
+                             <div class="cities-block">
+                                 <div class="cities-block__city">
+                                     <div class="city-address">Казань, ул. Декабристов, 96</div>
+                                     <div class="city-autosalon-info flex-block">
+                                         <span class="title">Автосaлон</span>
+                                         <div class="work-time flex-block">
+                                            <div class="work-time__full flex-block">
+                                                <span class="day">пн-сб:</span>
+                                                <span class="clock-interval">08:00-19:00</span>
+                                            </div>
+                                            <div class="work-time__midi flex-block">
+                                                <span class="day">вс:</span>
+                                                <span class="clock-interval">09:00-17:00</span>
+                                            </div>
+                                        </div>
+                                         <div class="phone flex-block">
+                                             <span class="phone-number">+7 (8552) 91-**-**</span>
+                                             <a href="#" class="view-phone">Показать номер</a>
+                                         </div>
+                                     </div>
+                                     <div class="city-autosalon-info flex-block">
+                                        <span class="title">Автосервис</span>
+                                        <div class="work-time flex-block">
+                                           <div class="work-time__full flex-block">
+                                               <span class="day">пн-сб:</span>
+                                               <span class="clock-interval">08:00-19:00</span>
+                                           </div>
+                                           <div class="work-time__midi flex-block">
+                                               <span class="day">вс:</span>
+                                               <span class="clock-interval">09:00-17:00</span>
+                                           </div>
+                                       </div>
+                                        <div class="phone flex-block">
+                                            <span class="phone-number">+7 (8552) 91-05-62</span>
+                                        </div>
+                                    </div>
+                                 </div>
+                                 <div class="cities-block__city">
+                                    <div class="city-address">Казань, ул. Декабристов, 96</div>
+                                    <div class="city-autosalon-info flex-block">
+                                        <span class="title">Автосaлон</span>
+                                        <div class="work-time flex-block">
+                                           <div class="work-time__full flex-block">
+                                               <span class="day">пн-сб:</span>
+                                               <span class="clock-interval">08:00-19:00</span>
+                                           </div>
+                                           <div class="work-time__midi flex-block">
+                                               <span class="day">вс:</span>
+                                               <span class="clock-interval">09:00-17:00</span>
+                                           </div>
+                                       </div>
+                                        <div class="phone flex-block">
+                                            <span class="phone-number">+7 (8552) 91-**-**</span>
+                                            <a href="#" class="view-phone">Показать номер</a>
+                                        </div>
+                                    </div>
+                                    <div class="city-autosalon-info flex-block">
+                                       <span class="title">Автосервис</span>
+                                       <div class="work-time flex-block">
+                                          <div class="work-time__full flex-block">
+                                              <span class="day">пн-сб:</span>
+                                              <span class="clock-interval">08:00-19:00</span>
+                                          </div>
+                                          <div class="work-time__midi flex-block">
+                                              <span class="day">вс:</span>
+                                              <span class="clock-interval">09:00-17:00</span>
+                                          </div>
+                                      </div>
+                                       <div class="phone flex-block">
+                                           <span class="phone-number">+7 (8552) 91-05-62</span>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="cities-block__city">
+                                    <div class="city-address">Казань, ул. Декабристов, 96</div>
+                                    <div class="city-autosalon-info flex-block">
+                                        <span class="title">Автосaлон</span>
+                                        <div class="work-time flex-block">
+                                           <div class="work-time__full flex-block">
+                                               <span class="day">пн-сб:</span>
+                                               <span class="clock-interval">08:00-19:00</span>
+                                           </div>
+                                           <div class="work-time__midi flex-block">
+                                               <span class="day">вс:</span>
+                                               <span class="clock-interval">09:00-17:00</span>
+                                           </div>
+                                       </div>
+                                        <div class="phone flex-block">
+                                            <span class="phone-number">+7 (8552) 91-**-**</span>
+                                            <a href="#" class="view-phone">Показать номер</a>
+                                        </div>
+                                    </div>
+                                    <div class="city-autosalon-info flex-block">
+                                       <span class="title">Автосервис</span>
+                                       <div class="work-time flex-block">
+                                          <div class="work-time__full flex-block">
+                                              <span class="day">пн-сб:</span>
+                                              <span class="clock-interval">08:00-19:00</span>
+                                          </div>
+                                          <div class="work-time__midi flex-block">
+                                              <span class="day">вс:</span>
+                                              <span class="clock-interval">09:00-17:00</span>
+                                          </div>
+                                      </div>
+                                       <div class="phone flex-block">
+                                           <span class="phone-number">+7 (8552) 91-05-62</span>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="cities-block__city--allsities-view">
+                                    <a class="link">Показать ещё</a>
+                                </div>    
+                             </div>
+                        </div>
+                    </div>
+                    <div class="address-salon__block--map">
+                        <img src="./img/map.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="white">
+            <div class="new-container">
+                <span class="micro-text">
+                    **Кредит предоставляется «БМВ Банк» ООО. Лицензия Банка России №3482 от 10.06.2013. Условия программы кредитования «Надежность»: первоначальный взнос – не менее 65% от стоимости автомобиля, процентная ставка по кредиту в рублях РФ — 5,1% при сроке кредита 12 месяцев (для автомобилей BMW 3 серии (G20) первоначальный взнос не менее 15% (10% при приобретении полиса КАСКО по программе «BMW Страхование»)); первоначальный взнос — не менее 50% от стоимости автомобиля процентные ставки по кредиту в рублях РФ — 9,5% при сроке 13-60 месяцев. Размеры остаточных платежей от стоимости автомобиля: 55% (12–24 мес.), 50% (36 мес.), 40% (48 мес.), 30% (60 мес.). Минимальная сумма кредита — 200 000 рублей РФ. Максимальная сумма кредита — 8 500 000 рублей РФ. Обязательно наличие полиса КАСКО. Обязательное страхование заемщиком жизни и здоровья путем присоединения к договору коллективного страхования жизни по программе страхования «Премиум», либо заключения договора личного страхования на условиях, сопоставимых с условиями программы страхования «Премиум» и описанных в Требованиях Банка к страховым компаниям и общим условиям предоставления страховых услуг. Программа распространяется на новые автомобили BMW 1 серии, BMW 3 серии, BMW 4 серии, BMW 5 серии, BMW 6 Гран Туризмо, BMW 8 серия, BMW X1, BMW X2 , BMW X3, BMW X4, BMW X5, BMW X6, Х7, BMW 3 серии Гран Туризмо, BMW М серии (кроме М5). Программа действует с 1 апреля по 30 июня 2019 года. Подробная информация на сайте www.bmwbank.ru. Настоящая информация не является офертой к заключению договора.
+                </span>
+            </div>
+        </section>
+    </main>
+    <footer class="grey footer-section">
+        <div class="new-container footer-land flex-block">
+            <div class="footer-land__dealer">Официальный дилер<br>BMW в Казани</div>
+            <div class="footer-land__address flex-block" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <!-- Footer с открытым номером и выбранным автосалоном -->
+                 <!--   <div class="footer-land__address--location flex-block with-salon">
+                       <span class="city" itemprop="addressLocality">Набережные челны,</span>
+                       <span class="address-salon" itemprop="streetAddress">Автодорога, №1</span>
+                   </div>
+                   <a href="tel:+7(8552)910562" class="footer-land__address--tel with-phone"  itemprop="telephone">+7 (8552) 91-05-62</a> -->
+                <!-- Конец тегов для хедера с открытым номером и автосалоном -->    
+               <!-- Footer с закрытым номером и селектом для выбора автосалона -->
+                   <div class="footer-land__address--location">
+                       <span class="city" itemprop="addressLocality">Набережные челны</span>
+                   </div>
+                   <div class = "footer-land__address--autosalon-select">
+                       <select class="select-default">
+                           <option>Автосалон</option>
+                           <option itemprop="streetAddress" title="Автодорога №1 Автодорога №1 Автодорога №1">Автодорога №1 Автодорога №1 Автодорога №1</option>
+                           <option itemprop="streetAddress" title="Автодорога №2">Автодорога №2</option>
+                           <option itemprop="streetAddress" title="Автодорога №3">Автодорога №3</option>
+                       </select>
+                   </div>
+                   <div class="footer-land__address--tel" itemprop="telephone" itemscope itemtype="http://schema.org/Organization">+7 (***) ***-**-**</div>
+                    <!-- Конец Хедера с закрытым номером и селектом для выбора автосалона -->
+               </div>
+               <a href="#request-modal" class="btn-blue footer-land__btn-white modal-click" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">Оставить заявку</a>
+        </div>
+    </footer>
+    <a href="javascript:void(0)" class="top-button"></a>
+    <section class="white subscribe transparent">
+        <div class="new-container subscribe-block flex-block">
+            <span class="subscribe-block__title">Узнайте о выгодных предложениях первым!</span>
+            <form class="subscribe-block__form flex-block">
+                    <div class="form-input">
+                        <div class ="required-before">
+                            <label class="visually-hidden" for="email">Телефон</label>
+                            <input type="email" name="email" id="email" class="input" placeholder="Введите свой email">
+                        </div>
+                        <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                    </div>
+                    <a href="#" class="btn-blue subscribe-block--btn-blue desctop" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">Узнать</a>
+                    <a href="#subscribe-modal" class="btn-blue subscribe-block--btn-blue mobile modal-click" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">Подписаться на рассылку</a>
+                </form>
+        </div>
+    </section>
+
+    <div class="tooltip_templates">
+        <div id="consultation-tooltip" class ="tooltip_open">
+            <p>Если Вы желаете получить консультацию об этом автомобиле, пожалуйста, оставьте заявку на обратный звонок и наши специалисты свяжутся с Вами.</p>
+        </div>
+        <div id="legal-tooltip" class ="tooltip_open">
+            <p>Если вы желаете приобрести автомобиль на юрлицо, пожалуйста, посетите специальный раздел нашего сайта для получения более подробной информации.</p>
+        </div>
+    </div>
+    <div id="request-modal" class="modal popup request-popup mobile-popup">
+        <h3 class="popup__title">Оставить заявку</h3>
+        <form class="popup__form" action="#" method="post">
+            <div class="popup__form--select-salon pb-20">
+                <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                <div class ="required-before">
+                    <select class="select-default">
+                        <option>Автосалон</option>
+                        <option>Автодорога №1</option>
+                        <option>Автодорога №2</option>
+                        <option>Автодорога №3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="popup__form--name pb-20">
+                <p class="invalid__data--text">Введите корректные данные</p>
+                <div class ="required-before">
+                    <label class="visually-hidden" for="name-request">Имя</label>
+                    <input type="text" name="name" id="name-request" class="form__input invalid__data" placeholder="Имя">
+                </div>
+            </div>
+            <div class="popup__form--phone pb-20">
+                    <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                    <div class ="required-before">
+                        <label class="visually-hidden" for="phone-request">Телефон</label>
+                        <input type="tel" name="phone" id="phone-request" class="form__input mask-phone" placeholder="+7 Введите 10 цифр телефона">
+                    </div>
+                </div>
+                <div class="popup__form--personal-data">
+                        <input class="personal-data__checkbox" type="checkbox" name="request-personal-data" id="request-personal-data" value="no">
+                        <label class="personal-data__checkbox-label" for="request-personal-data">Даю согласие на обработку персональных данных</label>
+                </div>
+               <div class="popup__form--compliance">
+                    Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="compliance-link">политикой конфиденциальности</a>.
+                </div>
+                <!-- <button type="submit" class="btn-blue popup__form--btn-blue">отправить</button> -->
+                <a href="#" class="btn-blue popup__form--btn-blue">отправить</a>
+        </form>
+        </div>
+      <div id="consultation-modal" class="modal popup consultation-popup mobile-popup">
+        <h3 class="popup__title">Получить консультацию</h3>
+            <form class="popup__form" action="#" method="post" autocomplete="off">
+                <div class="popup__form--select-salon pb-20">
+                    <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                    <div class ="required-before">
+                        <select class="select-default">
+                            <option>Автосалон</option>
+                            <option>Автодорога №1 Автодорога №1 Автодорога №1</option>
+                            <option>Автодорога №2</option>
+                            <option>Автодорога №3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="popup__form--name pb-20">
+                    <p class="invalid__data--text">Введите корректные данные</p>
+                    <div class ="required-before">
+                        <label class="visually-hidden" for="name-request">Имя</label>
+                        <input type="text" name="name" id="name-request" class="form__input invalid__data" placeholder="Имя" autocomplete="off">
+                    </div>
+                </div>
+                <div class="popup__form--phone pb-20">
+                        <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                        <div class ="required-before">
+                            <label class="visually-hidden" for="phone-request">Телефон</label>
+                            <input type="tel" name="phone" id="phone-request" class="form__input mask-phone" placeholder="+7 Введите 10 цифр телефона" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="popup__form--personal-data">
+                            <input class="personal-data__checkbox" type="checkbox" name="consultation-personal-data" id="consultation-personal-data" value="no">
+                            <label class="personal-data__checkbox-label" for="consultation-personal-data">Даю согласие на обработку персональных данных</label>
+                    </div>
+                    <div class="popup__form--compliance">
+                        Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="compliance-link">политикой конфиденциальности</a>.
+                    </div>
+                   <!--  <button type="submit" class="btn-blue popup__form--btn-blue">отправить</button> -->
+                    <a href="#" class="btn-blue popup__form--btn-blue">отправить</a>
+            </form>
+          </div>
+          <div id="autocredit-modal" class="modal popup consultation-popup mobile-popup">
+                <h3 class="popup__title">Рассчитать кредит</h3>
+                    <form class="popup__form" action="#" method="post" autocomplete="off">
+                        <div class="popup__form--select-salon pb-20">
+                            <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                            <div class ="required-before">
+                                <select class="select-default">
+                                    <option>Автосалон</option>
+                                    <option>Автодорога №1 Автодорога №1 Автодорога №1</option>
+                                    <option>Автодорога №2</option>
+                                    <option>Автодорога №3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="popup__form--name pb-20">
+                            <p class="invalid__data--text">Введите корректные данные</p>
+                            <div class ="required-before">
+                                <label class="visually-hidden" for="name-request">Имя</label>
+                                <input type="text" name="name" id="name-request" class="form__input invalid__data" placeholder="Имя" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="popup__form--phone pb-20">
+                                <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                <div class ="required-before">
+                                    <label class="visually-hidden" for="phone-request">Телефон</label>
+                                    <input type="tel" name="phone" id="phone-request" class="form__input mask-phone" placeholder="+7 Введите 10 цифр телефона" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="popup__form--personal-data">
+                                    <input class="personal-data__checkbox" type="checkbox" name="autocredit-personal-data" id="autocredit-personal-data" value="no">
+                                    <label class="personal-data__checkbox-label" for="autocredit-personal-data">Даю согласие на обработку персональных данных</label>
+                            </div>
+                            <div class="popup__form--compliance">
+                                Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="compliance-link">политикой конфиденциальности</a>.
+                            </div>
+                           <!--  <button type="submit" class="btn-blue popup__form--btn-blue">отправить</button> -->
+                            <a href="#" class="btn-blue popup__form--btn-blue">отправить</a>
+                    </form>
+                  </div>
+                  <div id="price-modal" class="modal popup consultation-popup mobile-popup">
+                    <h3 class="popup__title">Узнать цену</h3>
+                        <form class="popup__form" action="#" method="post" autocomplete="off">
+                            <div class="popup__form--select-salon pb-20">
+                                <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                <div class ="required-before">
+                                    <select class="select-default">
+                                        <option>Автосалон</option>
+                                        <option>Автодорога №1 Автодорога №1 Автодорога №1</option>
+                                        <option>Автодорога №2</option>
+                                        <option>Автодорога №3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="popup__form--name pb-20">
+                                <p class="invalid__data--text">Введите корректные данные</p>
+                                <div class ="required-before">
+                                    <label class="visually-hidden" for="name-request">Имя</label>
+                                    <input type="text" name="name" id="name-request" class="form__input invalid__data" placeholder="Имя" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="popup__form--phone pb-20">
+                                    <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                    <div class ="required-before">
+                                        <label class="visually-hidden" for="phone-request">Телефон</label>
+                                        <input type="tel" name="phone" id="phone-request" class="form__input mask-phone" placeholder="+7 Введите 10 цифр телефона" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="popup__form--personal-data">
+                                        <input class="personal-data__checkbox" type="checkbox" name="price-personal-data" id="price-personal-data" value="no">
+                                        <label class="personal-data__checkbox-label" for="price-personal-data">Даю согласие на обработку персональных данных</label>
+                                </div>
+                                <div class="popup__form--compliance">
+                                    Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="compliance-link">политикой конфиденциальности</a>.
+                                </div>
+                               <!--  <button type="submit" class="btn-blue popup__form--btn-blue">отправить</button> -->
+                                <a href="#" class="btn-blue popup__form--btn-blue">отправить</a>
+                        </form>
+                      </div>
+                      <div id="trade-in-modal" class="modal popup consultation-popup mobile-popup">
+                            <h3 class="popup__title">оставить заявку на трейд-ин</h3>
+                                <form class="popup__form" action="#" method="post" autocomplete="off">
+                                    <div class="popup__form--select-salon pb-20">
+                                        <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                        <div class ="required-before">
+                                            <select class="select-default">
+                                                <option>Автосалон</option>
+                                                <option>Автодорога №1 Автодорога №1 Автодорога №1</option>
+                                                <option>Автодорога №2</option>
+                                                <option>Автодорога №3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="popup__form--name pb-20">
+                                        <p class="invalid__data--text">Введите корректные данные</p>
+                                        <div class ="required-before">
+                                            <label class="visually-hidden" for="name-request">Имя</label>
+                                            <input type="text" name="name" id="name-request" class="form__input invalid__data" placeholder="Имя" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="popup__form--phone pb-20">
+                                            <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                            <div class ="required-before">
+                                                <label class="visually-hidden" for="phone-request">Телефон</label>
+                                                <input type="tel" name="phone" id="phone-request" class="form__input mask-phone" placeholder="+7 Введите 10 цифр телефона" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="popup__form--personal-data">
+                                                <input class="personal-data__checkbox" type="checkbox" name="trade-in-personal-data" id="trade-in-personal-data" value="no">
+                                                <label class="personal-data__checkbox-label" for="trade-in-personal-data">Даю согласие на обработку персональных данных</label>
+                                        </div>
+                                        <div class="popup__form--compliance">
+                                            Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="compliance-link">политикой конфиденциальности</a>.
+                                        </div>
+                                       <!--  <button type="submit" class="btn-blue popup__form--btn-blue">отправить</button> -->
+                                        <a href="#" class="btn-blue popup__form--btn-blue">отправить</a>
+                                </form>
+                              </div>
+                              <div id="test-drive-modal" class="modal popup consultation-popup mobile-popup">
+                                    <h3 class="popup__title">оставить заявку на тест драйв</h3>
+                                        <form class="popup__form" action="#" method="post" autocomplete="off">
+                                            <div class="popup__form--select-salon pb-20">
+                                                <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                                <div class ="required-before">
+                                                    <select class="select-default">
+                                                        <option>Автосалон</option>
+                                                        <option>Автодорога №1 Автодорога №1 Автодорога №1</option>
+                                                        <option>Автодорога №2</option>
+                                                        <option>Автодорога №3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="popup__form--name pb-20">
+                                                <p class="invalid__data--text">Введите корректные данные</p>
+                                                <div class ="required-before">
+                                                    <label class="visually-hidden" for="name-request">Имя</label>
+                                                    <input type="text" name="name" id="name-request" class="form__input invalid__data" placeholder="Имя" autocomplete="off">
+                                                </div>
+                                            </div>
+                                            <div class="popup__form--phone pb-20">
+                                                    <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                                    <div class ="required-before">
+                                                        <label class="visually-hidden" for="phone-request">Телефон</label>
+                                                        <input type="tel" name="phone" id="phone-request" class="form__input mask-phone" placeholder="+7 Введите 10 цифр телефона" autocomplete="off">
+                                                    </div>
+                                                </div>
+                                                <div class="popup__form--personal-data">
+                                                        <input class="personal-data__checkbox" type="checkbox" name="test-drive-personal-data" id="test-drive-personal-data" value="no">
+                                                        <label class="personal-data__checkbox-label" for="test-drive-personal-data">Даю согласие на обработку персональных данных</label>
+                                                </div>
+                                                <div class="popup__form--compliance">
+                                                    Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="compliance-link">политикой конфиденциальности</a>.
+                                                </div>
+                                               <!--  <button type="submit" class="btn-blue popup__form--btn-blue">отправить</button> -->
+                                                <a href="#" class="btn-blue popup__form--btn-blue">отправить</a>
+                                        </form>
+                                      </div>
+                                      <div id="repair-modal" class="modal popup consultation-popup mobile-popup">
+                                            <h3 class="popup__title">Записаться на ремонт</h3>
+                                                <form class="popup__form" action="#" method="post" autocomplete="off">
+                                                    <div class="popup__form--select-salon pb-20">
+                                                        <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                                        <div class ="required-before">
+                                                            <select class="select-default">
+                                                                <option>Автосалон</option>
+                                                                <option>Автодорога №1 Автодорога №1 Автодорога №1</option>
+                                                                <option>Автодорога №2</option>
+                                                                <option>Автодорога №3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup__form--name pb-20">
+                                                        <p class="invalid__data--text">Введите корректные данные</p>
+                                                        <div class ="required-before">
+                                                            <label class="visually-hidden" for="name-request">Имя</label>
+                                                            <input type="text" name="name" id="name-request" class="form__input invalid__data" placeholder="Имя" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup__form--phone pb-20">
+                                                            <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                                            <div class ="required-before">
+                                                                <label class="visually-hidden" for="phone-request">Телефон</label>
+                                                                <input type="tel" name="phone" id="phone-request" class="form__input mask-phone" placeholder="+7 Введите 10 цифр телефона" autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                        <div class="popup__form--personal-data">
+                                                                <input class="personal-data__checkbox" type="checkbox" name="repair-personal-data" id="repair-personal-data" value="no">
+                                                                <label class="personal-data__checkbox-label" for="repair-personal-data">Даю согласие на обработку персональных данных</label>
+                                                        </div>
+                                                        <div class="popup__form--compliance">
+                                                            Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="compliance-link">политикой конфиденциальности</a>.
+                                                        </div>
+                                                       <!--  <button type="submit" class="btn-blue popup__form--btn-blue">отправить</button> -->
+                                                        <a href="#" class="btn-blue popup__form--btn-blue">отправить</a>
+                                                </form>
+                                              </div>
+                                              <div id="subscribe-modal" class="modal popup subscribe-modal-popup mobile-popup">
+                                                <div class="subscribe-modal-popup__block">
+                                                <h3 class="popup__title">Узнайте о выгодных предложениях первым!</h3>
+                                                    <form class="popup__form" action="#" method="post" autocomplete="off">
+                                                        <div class="popup__form--name pb-20">
+                                                            <div class="required-before">
+                                                            <label class="visually-hidden" for="subscribe-request">Введите ваш email</label>
+                                                            <input type="text" name="subscribe-request" id="subscribe-request" class="form__input" placeholder="Введите свой email" autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                           <!--  <button type="submit" class="btn-blue popup__form--btn-blue">отправить</button> -->
+                                                            <a href="#" class="btn-blue popup__form--btn-blue subscribe-popup-btn">Подписаться</a>
+                                                    </form>
+                                                </div>
+                                        </div>                                                
+    <!--Jquery 3.3.1-->
+    <script src="./js/librarys/jquery-3.3.1.min.js"></script>
+    <!--Select2 JS-->
+    <script src="./js/plugins/select2.min.js"></script>
+    <!--Swiper-Slider JS-->
+    <script src="./js/plugins/swiper.min.js"></script>
+    <!--LightGallery JS-->
+    <script src="./js/plugins/lightgallery/lightgallery-all.min.js"></script>
+     <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<!--      <script src="./js/plugins/lightgallery/lg-thumbnail.min.js"></script>
+     <script src="./js/plugins/lightgallery/lg-fullscreen.min.js"></script> -->
+     <!-- ToolTip JS-->
+     <script src="./js/plugins/tooltipster.bundle.min.js"></script>
+    <!--Modal JS-->
+    <script src="./js/plugins/jquery.modal.min.js"></script>
+    <!--MaskedInput JS-->
+    <script src="./js/plugins/jquery.maskedinput.min.js"></script>
+    <!--Scrollbar JS-->
+    <script src="./js/plugins/jquery.custom-scrollbar.js"></script>
+    <!--Custom JS-->
+    <script src="./js/сustom_action.js"></script>
+
+</body>
+
+
+</html>

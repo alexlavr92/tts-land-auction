@@ -13,8 +13,19 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <!--Select2 CSS-->
 <link rel="stylesheet" type="text/css" href="./css/select2.min.css">
+<!--Swiper CSS-->
+<link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+<!--LightGallery CSS-->
+<link rel="stylesheet" type="text/css" href="./css/lightgallery.min.css">
+<!--ToolTip CSS-->
+<link rel="stylesheet" type="text/css" href="./css/tooltipster.bundle.min.css">
+<link rel="stylesheet" type="text/css" href="./css/tooltipster-sideTip-shadow.min.css">
+<!--Modal CSS-->
+<link rel="stylesheet" type="text/css" href="./css/jquery.modal.min.css">
 <!--Scrollbar CSS-->
 <link rel="stylesheet" type="text/css" href="./css/jquery.custom-scrollbar.css">
+<!-- VideoJS CSS-->
+<link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet" type="text/css">
 <!--Custom CSS-->
 <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
@@ -27,102 +38,166 @@
         <symbol id="share-icon" viewBox="0 0 19 20">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M15.25 0.0078125C14.4875 0.0078125 13.7562 0.309457 13.2171 0.846388C12.6779 1.38332 12.375 2.11155 12.375 2.87089C12.3756 3.05045 12.3931 3.22956 12.4274 3.40585L5.60864 7.36681C5.08928 6.92867 4.43067 6.68824 3.75 6.68832C2.9875 6.68832 2.25624 6.98996 1.71707 7.52689C1.1779 8.06382 0.875 8.79206 0.875 9.55139C0.875 10.3107 1.1779 11.039 1.71707 11.5759C2.25624 12.1128 2.9875 12.4145 3.75 12.4145C4.42961 12.4131 5.08678 12.1721 5.6049 11.7341L12.4274 15.6969C12.3931 15.8732 12.3756 16.0523 12.375 16.2319C12.375 16.9912 12.6779 17.7195 13.2171 18.2564C13.7562 18.7933 14.4875 19.095 15.25 19.095C16.0125 19.095 16.7438 18.7933 17.2829 18.2564C17.8221 17.7195 18.125 16.9912 18.125 16.2319C18.125 15.4726 17.8221 14.7443 17.2829 14.2074C16.7438 13.6705 16.0125 13.3688 15.25 13.3688C14.5697 13.3697 13.9118 13.6108 13.3932 14.0492L6.57259 10.0864C6.60687 9.91006 6.62441 9.73096 6.625 9.55139C6.62441 9.37183 6.60687 9.19272 6.57259 9.01643L13.3914 5.05547C13.9107 5.49361 14.5693 5.73404 15.25 5.73396C16.0125 5.73396 16.7438 5.43232 17.2829 4.89539C17.8221 4.35845 18.125 3.63022 18.125 2.87089C18.125 2.11155 17.8221 1.38332 17.2829 0.846388C16.7438 0.309457 16.0125 0.0078125 15.25 0.0078125Z"></path>
         </symbol>
-        <symbol id="register-user" x="0px" y="0px" viewBox="0 0 80.13 80.13" style="enable-background:new 0 0 80.13 80.13;">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M48.355,17.922c3.705,2.323,6.303,6.254,6.776,10.817c1.511,0.706,3.188,1.112,4.966,1.112
-		c6.491,0,11.752-5.261,11.752-11.751c0-6.491-5.261-11.752-11.752-11.752C53.668,6.35,48.453,11.517,48.355,17.922z M40.656,41.984
-		c6.491,0,11.752-5.262,11.752-11.752s-5.262-11.751-11.752-11.751c-6.49,0-11.754,5.262-11.754,11.752S34.166,41.984,40.656,41.984
-		z M45.641,42.785h-9.972c-8.297,0-15.047,6.751-15.047,15.048v12.195l0.031,0.191l0.84,0.263
-		c7.918,2.474,14.797,3.299,20.459,3.299c11.059,0,17.469-3.153,17.864-3.354l0.785-0.397h0.084V57.833
-		C60.688,49.536,53.938,42.785,45.641,42.785z M65.084,30.653h-9.895c-0.107,3.959-1.797,7.524-4.47,10.088
-		c7.375,2.193,12.771,9.032,12.771,17.11v3.758c9.77-0.358,15.4-3.127,15.771-3.313l0.785-0.398h0.084V45.699
-		C80.13,37.403,73.38,30.653,65.084,30.653z M20.035,29.853c2.299,0,4.438-0.671,6.25-1.814c0.576-3.757,2.59-7.04,5.467-9.276
-		c0.012-0.22,0.033-0.438,0.033-0.66c0-6.491-5.262-11.752-11.75-11.752c-6.492,0-11.752,5.261-11.752,11.752
-		C8.283,24.591,13.543,29.853,20.035,29.853z M30.589,40.741c-2.66-2.551-4.344-6.097-4.467-10.032
-		c-0.367-0.027-0.73-0.056-1.104-0.056h-9.971C6.75,30.653,0,37.403,0,45.699v12.197l0.031,0.188l0.84,0.265
-		c6.352,1.983,12.021,2.897,16.945,3.185v-3.683C17.818,49.773,23.212,42.936,30.589,40.741z"/>
-    </symbol>
-    <symbol id="support-answer" x="0px" y="0px" viewBox="0 0 437.6 437.6" style="enable-background:new 0 0 437.6 437.6;">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M264.6,300.4h-92C97,300.4,35.4,362,35.4,437.6h366.8C401.8,362.4,340.2,300.4,264.6,300.4z"/>
-			<path fill-rule="evenodd" clip-rule="evenodd" d="M235,237.6c7.2,0,14,2.4,19.2,6.8h33.2c16.4-17.2,26.4-40,26.4-65.6c0-52.8-42.8-95.2-95.2-95.2s-95.2,42.4-95.2,95.2
-				c0,35.6,19.6,66.8,48.8,83.2c3.2-14,15.6-24.4,30-24.4H235z"/>
-			<path fill-rule="evenodd" clip-rule="evenodd" d="M77.8,186.8c1.2,10,6,19.2,12.8,26c5.2,5.2,12,9.2,19.6,11.6c-0.4-1.6-0.4-3.2-0.4-4.4v-77.6c0-1.6,0-3.2,0.4-4.8
-				c-7.6,2-14,6-19.6,11.6c-0.4,0.4-1.2,1.2-1.6,1.6v-3.2c0-7.6,0.8-15.2,2-22.4c1.2-7.6,3.2-14.8,6-21.6c2.4-7.2,5.6-14,9.6-20.4
-				c3.6-6.4,8-12.8,12.8-18.4c0.4-0.4,0.8-1.2,0.8-1.6c3.6,0.4,7.2-0.8,9.6-3.2c24.4-24.4,56.4-36.4,88-36.4c31.6,0,64,12,88,36.4
-				c2.8,2.8,6.4,3.6,9.6,3.2c0.4,0.4,0.4,1.2,0.8,1.6c4.8,5.6,9.2,12,12.8,18.4c3.6,6.4,6.8,13.2,9.6,20.4c2.4,7.2,4.4,14.4,6,22
-				c1.2,7.2,2,14.8,2,22.4v3.2c-0.4-0.8-1.2-1.2-1.6-1.6c-5.2-5.2-12-9.2-19.6-11.6c0.4,1.6,0.4,3.2,0.4,4.8V220
-				c0,1.6,0,3.2-0.4,4.4c2-0.4,4-1.2,6-2v25.2c0,2.8-0.4,5.6-0.8,7.6c-0.4,2-1.2,3.2-2,4.4c-0.8,0.8-2,1.6-3.2,2
-				c-1.6,0.4-3.2,0.8-5.2,0.8h-0.4h-73.6c-2.4-4-6.4-6.8-11.6-6.8h-32.8c-7.2,0-12.8,6-12.8,12.8c0.4,7.2,6,12.8,13.2,12.8H235
-				c4.8,0,9.2-2.8,11.6-6.8H321h2.8c2.8,0,5.2-0.8,7.6-1.6c3.2-1.2,5.6-2.8,8-5.2c2-2.4,3.6-5.2,4.8-8.8c0.8-3.2,1.6-7.2,1.6-11.6
-				v-32V214c0.4-0.4,0.8-0.8,1.2-1.2c6.8-6.8,11.6-16,12.8-26c0.4-0.4,0.8-0.4,0.8-0.8c1.2-1.2,2-3.2,2-4.8V148
-				c0-8.4-0.8-16.8-2-24.8c-2.4-8.4-4.4-16.4-7.2-24.4c-2.8-8-6.4-15.6-10.8-22.8c-4-7.2-8.8-14-14.4-20.4c-0.4-0.8-1.2-1.2-2-1.6
-				c0.8-3.6-0.4-8-3.2-10.8C294.2,14.4,256.6,0,218.6,0S143,14.4,113.8,43.2c-2.8,2.8-4,7.2-3.2,10.8c-0.8,0.4-1.2,0.8-2,1.6
-				C103,62,98.2,68.8,94.2,76s-7.6,14.8-10.8,22.8c-2.8,8-5.2,16-6.4,24.4c-1.6,8-2,16.4-2,24.8v33.2c0,2,0.8,3.6,2,4.8
-				C77.4,186.4,77.8,186.4,77.8,186.8z"/>
-    </symbol>
-    <symbol id="start-auction" viewBox="-16 0 512 512">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="m270 249.789062v-19.320312c-13.691406 6.554688-28.835938 10.53125-45 10.53125s-31.308594-3.976562-45-10.53125v19.320312l45 45zm0 0"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="m346.714844 41.03125 20.519531 56.378906 42.128906-15.328125 15.8125 43.449219c7.585938-3.472656 15.945313-5.53125 24.824219-5.53125 1.777344 0 3.453125.375 5.191406.527344l-17.714844-48.671875 42.523438-15.472657-20.523438-56.382812zm0 0"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="m300 35.726562v-25.726562h-150v25.726562l75 37.5zm0 0"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="m150 135c0 41.421875 33.578125 76 75 76s75-34.578125 75-76v-65.726562l-75 37.5-75-37.5zm0 0"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="m420 271h-94.464844l-53.574218 150h88.039062v-90h60c33.136719 0 60-26.863281 60-60v-30h-60zm0 0"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="m156.25 271 53.578125 150h30.34375l53.578125-150h-2.539062l-45 45 19.394531 19.394531-21.210938 21.210938-19.394531-19.394531-19.394531 19.394531-21.210938-21.210938 19.394531-19.394531-45-45zm0 0"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="m98.789062 271-68.789062 38.789062v111.210938h60v-60h30v60h58.039062l-53.574218-150zm0 0"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="m0 451h420v61h-420zm0 0"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="m450 150c-16.570312 0-30 13.429688-30 30v31h60v-31c0-16.570312-13.429688-30-30-30zm0 0"/>
-
-    </symbol>
     </svg>
         
     <header class = "header">
         <div class="new-container header-land flex-block" itemscope itemtype="http://schema.org/Organization">
             <div class="header-land__logo flex-block">
+                <meta itemprop="name" content="ТрансТехСервис">
                 <a href="/land/" class="logo__img header-land__logo--img" itemprop="url"></a>
-                <div class="header-land__auction" itemprop="description" content="Автомобильный аукцион">Автомобильный<br>аукцион</div>
+                <meta itemprop="logo" content="http://new-tts.tw1.ru/land/img/logo.svg">
+                <div class="header-land__dealer" itemprop="description" content="Официальный дилер BMW">Официальный дилер<br> BMW</div>
             </div>
-            <div class="mob-hamburger"><span class="mob-hamburger__center-stripe"></span></div>
-            <div class="header-land__nav-block flex-block">
-                <nav class="nav">
-                    <a href="#top-block" anchor="yes" class="nav__item">Описание</a>
-                    <a href="#instruction" anchor="yes" class="nav__item">Инструкция</a>
-                    <a href="#how-much" anchor="yes" class="nav__item">Стоимость</a>
-                    <a href="#about-company" anchor="yes" class="nav__item">ТрансТехСервис</a>
-                </nav>
-                <div class="nav-btn">
-                    <a class="nav-btn__item come-in" href="#"><span>Вход</span></a>
-                    <span> / </span>
-                    <a class="nav-btn__item registration" href="#"><span>Регистрация</span></a>
+            <div class="header-land__address flex-block" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+             <!-- Хедер с открытым номером и выбранным автосалоном -->
+              <!--   <div class="header-land__address--location flex-block with-salon">
+                    <span class="city" itemprop="addressLocality">Набережные челны,</span>
+                    <span class="address-salon" itemprop="streetAddress">Автодорога, №1</span>
                 </div>
+                <a href="tel:+7(8552)910562" class="header-land__address--tel with-phone"  itemprop="telephone">+7 (8552) 91-05-62</a> -->
+             <!-- Конец тегов для хедера с открытым номером и автосалоном -->    
+                <div class = "header-land__address--autosalon-select">
+                    <select class="select-default">
+                        <option>Город</option>
+                        <option itemprop="addressLocality" title="Набережные челны">Набережные челны</option>
+                        <option itemprop="addressLocality" title="Казань">Казань</option>
+                        <option itemprop="addressLocality" title="Чебоксары">Чебоксары</option>
+                    </select>
+                </div>
+                <div class = "header-land__address--autosalon-select">
+                    <select class="select-default">
+                        <option>Автосалон</option>
+                        <option itemprop="streetAddress" title="Автодорога №1 Автодорога №1 Автодорога №1">Автодорога №1 Автодорога №1 Автодорога №1</option>
+                        <option itemprop="streetAddress" title="Автодорога №2">Автодорога №2</option>
+                        <option itemprop="streetAddress" title="Автодорога №3">Автодорога №3</option>
+                    </select>
+                </div>
+            <a href="javascript: void(0)" class="header-land__address--tel" itemprop="telephone" itemscope itemtype="http://schema.org/Organization">+7 (***) ***-**-**</a>
+            <!-- Ссылка с активным номером телефона -->
+              <!-- <a href="tel:+7(8552)910562" class="header-land__address--tel active"  itemprop="telephone">+7 (8552) 91-05-62</a> -->
             </div>
-           
+            <a href="#request-modal" class="btn-blue header-land__btn-blue modal-click" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">Оставить заявку</a>
         </div>
     </header>
     <main>
-        <section class="grey top" id="top-block">
-                <div class="new-container top-block offer-block flex-block">
-                    <div class="offer-block__description">
-                        <h3 class="offer-block__description--title" >Аукцион автомобилей с пробегом в ТрансТехСервис</h3>
-                        <div class="offer-block__description--text">
-                                Приветствуем Вас на специализированной
-                                площадке крупнейшего регионального
-                                автодилера. Представляем вам интернет-
-                                аукцион, разработанный для
-                                профессиональных покупателей
+        <section class="grey top">
+            <div class="new-container offer-block-main flex-block" itemscope itemtype="http://schema.org/Product">
+                <div class="offer-block-main__slider"> 
+                    <div class="top-slider main-offer-slider swiper-container">
+                        <div class="swiper-wrapper lightgallery">
+                            <a href="./img/bmwX6.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                <img src="./img/bmwX6.jpg" class="slide-img" alt="" />
+                            </a>
+                            <a href="./img/bmwX6-2.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                <img src="./img/bmwX6-2.jpg" class="slide-img" alt="" />
+                            </a>
+                             <a href="./img/bmwX6-3.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                <img src="./img/bmwX6-3.jpg" class="slide-img" alt="" />
+                            </a>
+                            <a href="./img/bmwX6-4.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                <img src="./img/bmwX6-4.jpg" class="slide-img" alt="" />
+                            </a>
+                            <a href="./img/bmwX6-5.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                <img src="./img/bmwX6-5.jpg" class="slide-img" alt="" />
+                            </a>
+                            <a href="./img/bmwX6-6.jpg" class="swiper-slide lightgallery__item" itemprop="image"> 
+                                <img src="./img/bmwX6-6.jpg" class="slide-img" alt="" />
+                            </a>
+                            <a href="./img/bmwX6-7.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                <img src="./img/bmwX6-7.jpg" class="slide-img" alt="" />
+                            </a>
+                            <a href="./img/bmwX6-8.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                <img src="./img/bmwX6-8.jpg" class="slide-img" alt="" />
+                            </a>
                         </div>
-                        <div class="offer-block-buttons flex-block">
-                                <a href="#" class="btn btn-blue offer-button">Войти</a>
-                                <a href="#" class="btn btn-white offer-button">Зарегистрироваться</a>
-                                <a href="https://www.tts.ru/" class="btn btn-white offer-button">Перейти на tts.ru</a>
+                        <div class="swiper-button swiper-button-next">
                         </div>
-                    </div>
-                    <div class="offer-block__img">
-                            <div class="offer-block__img--image" style="background-image: url(./img/auction_img.jpg)"></div>
+                        <div class="swiper-button swiper-button-prev">
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
+                <div class="offer-block-main__description">
+                    <h2 class="offer-block-main__description--title" itemprop="name">BMW X6 в ТрансТехСервис</h2>
+                    <div class='h2 offer-block-main__description--price' itemprop="offers" itemscope itemtype="http://schema.org/Offer">за <span itemprop="price" class="this-number">4270000 </span><span class="font-w400" itemprop="priceCurrency" content="RUB">₽*</span></div>
+                    <ul class="offer-block-main__description--list">
+                        <li class="li">
+                            <a href="#auto-credit" anchor="yes" class="li__link link" itemprop="description">в кредит от 5,1%</a>
+                        </li>
+                        <li class="li">
+                            <div class="li__span" itemprop="description">выгода по <a href="#treid-in" anchor="yes" class="link">Трейд-ин</a><br> до <span class="this-number">150000</span> ₽</div>
+                        </li>
+                    </ul>
+                    <div class="offer-block-main__description--timer">
+                        <h4>До конца акции осталось:</h4>
+                        <div id="timer" class="timer__content flex-block">
+                            <div class="timer__inner">
+                                <div class="timer-digit" id="days"></div>
+                                <span class="timer-span">дней</span>
+                            </div>
+                            <span class="timer-colon">:</span>
+                            <div class="timer__inner">
+                                <div class="timer-digit" id="hours"></div>
+                                <span class="timer-span">часов</span>
+                            </div>
+                            <span class="timer-colon">:</span>
+                            <div class="timer__inner">
+                                <div class="timer-digit" id="minutes"></div>
+                                <span class="timer-span">минут</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-block-main__description--button">
+                        <a href="#consultation-modal" class="btn-blue offer-block-main__description--btn-blue modal-click" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">Получить консультацию</a>
+                        <span class="tooltip" data-tooltip-content="#consultation-tooltip"></span>
+                    </div>
+                    <div class="offer-block-main__description--legal">
+                        <a href="javaScript:void(0)" class="legal-link link" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">Купить как юр лицо</a>
+                        <span class="tooltip" data-tooltip-content="#legal-tooltip"></span>
+                    </div>
+                </div>
+                <div class="offer-block-main__nav-slider">
+                    <div class="nav-slider nav-offer-main swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"   >
+                                <img src="./img/bmwX6.jpg" class="slide-img" alt="bmwX6" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmwX6-2.jpg" class="slide-img" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmwX6-3.jpg" class="slide-img" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmwX6-4.jpg" class="slide-img" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmwX6-5.jpg" class="slide-img" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmwX6-6.jpg" class="slide-img" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmwX6-7.jpg" class="slide-img" alt=""/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmwX6-8.jpg" class="slide-img" alt="" />
+                            </div>
+                        </div>
+                        <div class="swiper-button swiper-button-next">
+                            <div class="swiper-button__arrow arrow-next"></div>
+                        </div>
+                        <div class="swiper-button swiper-button-prev">
+                            <div class="swiper-button__arrow arrow-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="white">
-            <div class="new-container advantages-block">
-                <h3 class="advantages-block__title">Преимущества покупки через аукцион</h3>
-                <div class="advantages-block__block bounce-block flex-block">
+            <div class="new-container dealer-conditions">
+                <h3 class="dealer-conditions__title">Условия официального дилера</h3>
+                <div class="dealer-conditions__block bounce-block flex-block">
                     <div class="bounce-block__single flex-block">
                         <div class="bounce-block__single--group flex-block">
                             <div class="bounce1 flex-block">
@@ -131,7 +206,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bounce-block__single--text">Проверенная<br>информация</div>
+                        <div class="bounce-block__single--text">Сохранение гарантии изготовителя</div>
                     </div>
                     <div class="bounce-block__single flex-block">
                         <div class="bounce-block__single--group flex-block">
@@ -141,7 +216,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bounce-block__single--text">Надежность<br>выбора</div>
+                        <div class="bounce-block__single--text">Сертифицированный сервис BMW</div>
                     </div>
                     <div class="bounce-block__single flex-block">
                             <div class="bounce-block__single--group flex-block">
@@ -151,7 +226,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="bounce-block__single--text">Открытые<br>коммуникации</div>
+                            <div class="bounce-block__single--text">Более 160 BMW в наличии с ПТС</div>
                         </div>
                         <div class="bounce-block__single flex-block">
                                 <div class="bounce-block__single--group flex-block">
@@ -161,105 +236,687 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="bounce-block__single--text">Комфортное<br>заключение сделки</div>
+                                <div class="bounce-block__single--text">Доступна любая комплектация/расцветка</div>
                             </div>
                 </div>
-                <span class="advantages-block__subtitle">Удобство покупки автомобилей на выгодных условиях в один клик.</span>
             </div>
         </section>
-        <section class="grey" id="instruction">
-                <div class = "new-container begin-use">
-                    <h3 class="begin-use__title">Как начать пользоваться аукционом</h3>
-                    <div class="begin-use__block flex-block">
-                        <div class="begin-use__block--single flex-block">
-                            <div class="icon">
-                                <span class="visually-hidden">Зарегистрироваться</span>
-                                <svg class="icon-svg" width="80.13px" height="80.13px">
-                                    <use xlink:href="#register-user"></use>
-                                </svg>
-                            </div>
-                            <div class="description">Зарегистрируйтесь в системе, укажите данные вашего юридического лица</div>
-                        </div>
-                        <div class="begin-use__block--single flex-block">
-                                <div class="icon">
-                                        <span class="visually-hidden">Дождатьтся ответа</span>
-                                        <svg class="icon-svg" width="80.13px" height="80.13px">
-                                            <use xlink:href="#support-answer"></use>
-                                        </svg>
-                                    </div>
-                                <div class="description">Дождитесь ответа службы поддержки, чтобы получить решение по договору</div>
-                            </div>
-                            <div class="begin-use__block--single flex-block">
-                                    <div class="icon">
-                                        <span class="visually-hidden">Зарегистрироваться</span>
-                                        <svg class="icon-svg" width="80.13px" height="80.13px">
-                                            <use xlink:href="#start-auction"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="description">Приступайте к торгам в удобном для вас режимах - ручном, либо автоматическом</div>
-                                </div>
-                    </div>
-                </div>
-            </section>
-            <section class="white" id="how-much">
-                    <div class="new-container how-much">
-                        <h3 class="how-much__title">Сколько стоит участие в аукционе?</h3>
-                        <div class="how-much__description">
-                                Участие в аукционе абсолютно бесплатное. Вы платите только за автомобиль, выигранный в
-                                процессе аукционных торгов. Покупать проверенные автомобили в компании
-                                ТрансТехСервис комфортно!
-                        </div>
-                    </div>
-                </section>
-            <section class="white">
-                    <div class="new-container auto-options">
-                        <h3 class="auto-options__title">Автомобили в ТрансТехСервис:</h3>
-                        <div class="auto-options__block flex-block">
-                            <div class="auto-options__block--single"><span class="background flex-block">проходят полную техническую проверку</span></div>
-                            <div class="auto-options__block--single"><span class="background flex-block">продаются с гарантией юридической чистоты</div>
-                            <div class="auto-options__block--single"><span class="background flex-block">проходят проверку лакокрасочного покрытия</span></div>
-                            <div class="auto-options__block--single"><span class="background flex-block">содержат достоверные технические характеристики и подробные фотографии</span></div>
-                        </div>
-                        <span class="auto-options__subtitle">На все наши автомобили распространяется возможность возможность обмена или возврата
-                                денежных средств, если автомобиль не соответствует заявленному описанию в течение 7
-                                дней.</span>
-                    </div>
-            </section>
-        <section class="grey" id="about-company">
-            <div class="new-container about-company offer-block flex-block">
+        <section class="white" id="auto-credit">
+            <div class="new-container auto-credit offer-block flex-block" itemscope itemtype="http://schema.org/Offer">
                 <div class="offer-block__img">
-                    <div class="offer-block__img--image" style="background-image: url(./img/about-company.jpg)"></div>
+                    <div class="offer-block__img--image" style="background-image: url(./img/auto-credit.jpg)" itemprop="image" content="http://new-tts.tw1.ru/land/img/auto-credit.jpg"></div>
                 </div>
                 <div class="offer-block__description">
-                    <h3 class="offer-block__description--title" itemprop="name">ТрансТехСервис - абсолютный региональный лидер по продажам автомобилей</h3>
+                    <h3 class="offer-block__description--title" itemprop="name">BMW X6 в кредит от 5,1%**</h3>
                     <div class="offer-block__description--text" itemprop="description">
-                            Компания ТрансТехСервис на рынке с 1992 года. Специализируется в области реализации и технического обслуживания автомобилей.
+                        В ТрансТехСервис созданы все необходимые условия для того, чтобы покупка авто в кредит, стала для вас выгодной. Благодаря существующей у нас службе кредитования мы имеем доступ к самым выгодным предложениям, которые присутствуют на рынке автокредитования, и даем возможность всем желающим получить кредит на автомобили BMW.
                     </div>
-                    <div class="offer-block__description--list">
-                        <ul class="company-count flex-block">
-                            <li class="company-count__li">
-                                <span class = "count">19</span>
-                                <span class = "count-text">автомобильных брендов</span>
-                            </li>
-                            <li class="company-count__li">
-                                <span class = "count">104</span>
-                                <span class = "count-text">автоцентра</span>
-                            </li>
-                            <li class="company-count__li">
-                                <span class = "count">93,5 млрд.</span>
-                                <span class = "count-text">оборот компании в 2018 г.</span>
-                            </li>
-                            <li class="company-count__li">
-                                <span class = "count">59 тыс.</span>
-                                <span class = "count-text">новых авто продано в 2018 г.</span>
-                            </li>
+                    <div class="offer-block__form">
+                        <h4 class="offer-block__form--title">Оставьте заявку на расчет кредита</h4>
+                        <form class="offer-block__form--body flex-block">
+                            <div class="form-input">
+                                <div class ="required-before">
+                                    <label class="visually-hidden" for="phone-request">Телефон</label>
+                                    <input type="tel" name="phone" id="phone-request" class="input mask-phone invalid__data" placeholder="+7 Введите 10 цифр телефона">
+                                </div>
+                                <p class="invalid__data--text">Введите корректные данные</p>
+                            </div>
+                            <a href="#autocredit-modal" class="btn-blue form__body--btn-blue modal-click" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">Рассчитать кредит</a>
+                        </form>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="grey">
+            <div class="new-container catalog-block">
+                <h3 class="catalog-block__title catalog-block-filter__title">Автомобили BMW X6 в наличии под заказ</h3>
+                <span class="catalog-block__sub-title">Мощный и атлетичный. Солидный как модели серии и спортивный как купе. BMW X6 сметает все границы.</span>
+                <a href="#catalog-fitler" class="catalog-block__filter-mobile modal-click btn-white"><span class="filter-text">Фильтр</span></a>
+                <div class="catalog-block__filter flex-block">
+                    <div class="catalog-block__filter--select salon">
+                        <select class="select-default">
+                            <option>Автосалон</option>
+                            <option>Автодорога №1 Автодорога №1 Автодорога №1 </option>
+                            <option>Автодорога №2</option>
+                            <option>Автодорога №3</option>
+                        </select>   
+                    </div>
+                    <div class="catalog-block__filter--select brand">
+                        <select class="select-default">
+                            <option>Бренд</option>
+                            <option>Toyota</option>
+                            <option>Honda</option>
+                            <option>Nissan</option>
+                        </select>   
+                    </div>
+                    <div class="catalog-block__filter--select model">
+                        <select class="select-default">
+                            <option>Модель</option>
+                            <option>Avensis</option>
+                            <option>Supra</option>
+                            <option title="Land Cruiser 200">Land Cruiser 200</option>
+                        </select>   
+                    </div>
+                    <div class="catalog-block__filter--select year">
+                            <select class="select-default">
+                                <option>Автосалон</option>
+                                <option>Автодорога №1 Автодорога №1 Автодорога №1 </option>
+                                <option>Автодорога №2</option>
+                                <option>Автодорога №3</option>
+                            </select>   
+                    </div>
+                    <div class="catalog-block__filter--price-input flex-block">
+                        <span class="price">Цена</span>
+                        <div class="input-price-block">
+                            <label class="label-price" for="price-min">от</label>
+                            <input type="text" name="price-min" id="price-min" class="form__input input-price" placeholder="200 000"  inputmode="tel" autocomplete="off">
+                            <span class="input-defis"></span>
+                            <label class="label-price" for="price-min">до</label>
+                            <input type="text" name="price-max" id="price-max" class="form__input input-price" placeholder="8 000 000" inputmode="tel" autocomplete="off"> 
+                        </div>
+                    </div>
+                    <a href="#" class="catalog-block__filter--reset"><span class="reset-text">Cбросить</span></a>
+                </div>
+                <div class="catalog-block__item-block flex-block">
+                    <div class="catalog-item">
+                        <div class="item-img" style="background-image: url(./img/item-catalog.png)"></div>
+                        <div class="item-name">Mitsubishi ASX</div>
+                        <ul class="item-description flex-block">
+                            <li class="item-description__li item-body">Седан</li>
+                            <li class="item-description__li item-year">2018 г.в.</li>
+                            <li class="item-description__li item-color">черный</li>
+                            <li class="item-description__li item-kpp">АКПП</li>
+                            <li class="item-description__li item-capacity">2.0 л</li>
+                        </ul>
+                        <div class="item-complectation"><b>Комплектация:</b> Land Rover Range Rover L405 3.0 Litre TDV6 Diesel...</div>
+                        <a href="#price-modal" class="item-price-link modal-click">узнать цену</a>
+                    </div>
+                    <div class="catalog-item with-price-of">
+                        <div class="item-img" style="background-image: url(./img/item-catalog.png)"></div>
+                        <div class="item-name">Mitsubishi ASX</div>
+                        <ul class="item-description flex-block">
+                            <li class="item-description__li item-body">Седан</li>
+                            <li class="item-description__li item-year">2018 г.в.</li>
+                            <li class="item-description__li item-color">черный</li>
+                            <li class="item-description__li item-kpp">АКПП</li>
+                            <li class="item-description__li item-capacity">2.0 л</li>
+                        </ul>
+                        <div class="item-price-of flex-block">
+                            <div class="price-of__value this-number">1650000<span> ₽</span></div>
+                        </div>
+                        <div class="item-complectation"><b>Комплектация:</b> Land Rover Range Rover L405 3.0 Litre TDV6 Diesel...</div>
+                        <a href="#price-modal" class="item-price-link modal-click">узнать цену</a>
+                    </div>
+                    <div class="catalog-item with-price-of">
+                            <div class="item-discount">выгода до <span class="this-number">150000</span> ₽</div>
+                            <div class="item-img" style="background-image: url(./img/item-catalog.png)"></div>
+                            <div class="item-name">Mitsubishi ASX</div>
+                            <ul class="item-description flex-block">
+                                <li class="item-description__li item-body">Седан</li>
+                                <li class="item-description__li item-year">2018 г.в.</li>
+                                <li class="item-description__li item-color">черный</li>
+                                <li class="item-description__li item-kpp">АКПП</li>
+                                <li class="item-description__li item-capacity">2.0 л</li>
+                            </ul>
+                            <div class="item-price-of flex-block">
+                                <div class="price-of__value this-number">1650000<span> ₽</span></div>
+                            </div>
+                            <div class="item-complectation"><b>Комплектация:</b> Land Rover Range Rover L405 3.0 Litre TDV6 Diesel...</div>
+                            <a href="#price-modal" class="item-price-link modal-click">узнать цену</a>
+                        </div>
+                       <div class="catalog-item with-price-of">
+                                <div class="item-discount">выгода до <span class="this-number">150000</span> ₽</div>
+                                <div class="item-img" style="background-image: url(./img/item-catalog.png)"></div>
+                                <div class="item-name">Mitsubishi ASX</div>
+                                <ul class="item-description flex-block">
+                                    <li class="item-description__li item-body">Седан</li>
+                                    <li class="item-description__li item-year">2018 г.в.</li>
+                                    <li class="item-description__li item-color">черный</li>
+                                    <li class="item-description__li item-kpp">АКПП</li>
+                                    <li class="item-description__li item-capacity">2.0 л</li>
+                                </ul>
+                                <div class="item-price-of flex-block">
+                                    <div class="price-of__value this-number">1650000<span> ₽</span></div>
+                                </div>
+                                <div class="item-complectation"><b>Комплектация:</b> Land Rover Range Rover L405 3.0 Litre TDV6 Diesel...</div>
+                                <a href="#price-modal" class="item-price-link modal-click">узнать цену</a>
+                            </div>
+                         <div class="catalog-item">
+                                    <div class="item-img" style="background-image: url(./img/item-catalog.png)"></div>
+                                    <div class="item-name">Mitsubishi ASX</div>
+                                    <ul class="item-description flex-block">
+                                        <li class="item-description__li item-body">Седан</li>
+                                        <li class="item-description__li item-year">2018 г.в.</li>
+                                        <li class="item-description__li item-color">черный</li>
+                                        <li class="item-description__li item-kpp">АКПП</li>
+                                        <li class="item-description__li item-capacity">2.0 л</li>
+                                    </ul>
+                                    <div class="item-complectation"><b>Комплектация:</b> Land Rover Range Rover L405 3.0 Litre TDV6 Diesel...</div>
+                                    <a href="#price-modal" class="item-price-link modal-click">узнать цену</a>
+                                </div>
+                                <div class="catalog-item with-price-of with-price-new">
+                                        <div class="item-img" style="background-image: url(./img/item-catalog.png)"></div>
+                                        <div class="item-name">Mitsubishi ASX</div>
+                                        <ul class="item-description flex-block">
+                                            <li class="item-description__li item-body">Седан</li>
+                                            <li class="item-description__li item-year">2018 г.в.</li>
+                                            <li class="item-description__li item-color">черный</li>
+                                            <li class="item-description__li item-kpp">АКПП</li>
+                                            <li class="item-description__li item-capacity">2.0 л</li>
+                                        </ul>
+                                        <div class="item-price-of flex-block">
+                                            <div class="price-of__value this-number">1650000<span> ₽</span></div>
+                                        </div>
+                                        <div class="item-price-new flex-block">
+                                            <div class="price-new__value this-number">1600000<span> ₽</span></div>
+                                            <span class="tooltip" data-tooltip-content="#consultation-tooltip"></span>
+                                        </div>
+                                        <a href="#consultation-modal" class="item-price-link modal-click">получить консультацию</a>
+                                    </div>  
+                                    <div class="catalog-item with-price-of">
+                                            <div class="item-discount">выгода до <span class="this-number">150000</span> ₽</div>
+                                            <div class="item-img" style="background-image: url(./img/item-catalog.png)"></div>
+                                            <div class="item-name">Mitsubishi ASX</div>
+                                            <ul class="item-description flex-block">
+                                                <li class="item-description__li item-body">Седан</li>
+                                                <li class="item-description__li item-year">2018 г.в.</li>
+                                                <li class="item-description__li item-color">черный</li>
+                                                <li class="item-description__li item-kpp">АКПП</li>
+                                                <li class="item-description__li item-capacity">2.0 л</li>
+                                            </ul>
+                                            <div class="item-price-of flex-block">
+                                                <div class="price-of__value this-number">1650000<span> ₽</span></div>
+                                            </div>
+                                            <div class="item-complectation"><b>Комплектация:</b> Land Rover Range Rover L405 3.0 Litre TDV6 Diesel...</div>
+                                            <a href="#price-modal" class="item-price-link modal-click">узнать цену</a>
+                                        </div>
+                                        <div class="catalog-item with-price-of">
+                                                <div class="item-discount">выгода до <span class="this-number">150000</span> ₽</div>
+                                                <div class="item-img" style="background-image: url(./img/item-catalog.png)"></div>
+                                                <div class="item-name">Mitsubishi ASX</div>
+                                                <ul class="item-description flex-block">
+                                                    <li class="item-description__li item-body">Седан</li>
+                                                    <li class="item-description__li item-year">2018 г.в.</li>
+                                                    <li class="item-description__li item-color">черный</li>
+                                                    <li class="item-description__li item-kpp">АКПП</li>
+                                                    <li class="item-description__li item-capacity">2.0 л</li>
+                                                </ul>
+                                                <div class="item-price-of flex-block">
+                                                    <div class="price-of__value this-number">1650000<span> ₽</span></div>
+                                                </div>
+                                                <div class="item-complectation"><b>Комплектация:</b> Land Rover Range Rover L405 3.0 Litre TDV6 Diesel...</div>
+                                                <a href="#price-modal" class="item-price-link modal-click">узнать цену</a>
+                                            </div> 
+                </div>
+                        <ul class="catalog-block__pagination flex-block">
+                            <li class="page-prev"><a href="javaScript:void(0)" class="page-prev__link"><span class="page-prev__link--triangle"></span></a></li>
+                            <li class="page active"><a href="javaScript:void(0)" class="page__link">1</a></li>
+                            <li class="page"><a href="javaScript:void(0)" class="page__link">2</a></li>
+                            <li class="page"><a href="javaScript:void(0)" class="page__link">3</a></li>
+                            <li class="page"><a href="javaScript:void(0)" class="page__link">4</a></li>
+                            <li class="page"><a href="javaScript:void(0)" class="page__link">5</a></li>
+                            <li class="page dots"><span>...</span></li>
+                            <li class="page"><a href="javaScript:void(0)" class="page__link">11</a></li>
+                            <li class="page-next"><a href="javaScript:void(0)" class="page-next__link"><span class="page-next__link--triangle"></span></a></li>
+                        </ul>
+            </div>
+        </section>
+        <section class="white">
+            <div class="new-container catalog-block">
+                <h3 class="catalog-block__title">Автомобили BMW X6 в наличии под заказ</h3>
+                <span class="catalog-block__sub-title">Мощный и атлетичный. Солидный как модели серии и спортивный как купе. BMW X6 сметает все границы.</span>
+                <div class="catalog-block__slider">
+                        <div class="nav-slider catalog-slider swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"   >
+                                            <div class="catalog-item with-price-of with-price-new">
+                                                    <a href="#" class="item-link-block">
+                                                    <div class="item-discount">выгода до <span class="this-number">150000</span> ₽</div>
+                                                    <div class="item-img" style="background-image: url(./img/item-catalog.png)"></div>
+                                                    <div class="item-name">Mitsubishi ASX</div>
+                                                    <ul class="item-description flex-block">
+                                                        <li class="item-description__li item-body">Седан</li>
+                                                        <li class="item-description__li item-year">2018 г.в.</li>
+                                                        <li class="item-description__li item-color">черный</li>
+                                                        <li class="item-description__li item-kpp">АКПП</li>
+                                                        <li class="item-description__li item-capacity">2.0 л</li>
+                                                    </ul>
+                                                    <div class="item-price-of flex-block">
+                                                        <div class="price-of__value this-number">1650000<span> ₽</span></div>
+                                                    </div>
+                                                    <div class="item-price-new flex-block">
+                                                        <div class="price-new__value this-number">1600000<span> ₽</span></div>
+                                                        <span class="tooltip" data-tooltip-content="#consultation-tooltip"></span>
+                                                    </div>
+                                                    </a>
+                                                    <a href="#consultation-modal" class="item-price-link modal-click">получить консультацию</a>
+                                                </div>  
+                                    </div>
+                                    <div class="swiper-slide">
+                                            <div class="catalog-item with-price-of with-price-new">
+                                                    <div class="item-icons">
+                                                        <a href ="like" class="item-icons__single like" title="Добавить в избранное">
+                                                            <span class="visually-hidden">Избранное</span>
+                                                            <svg class="icon-svg" width="25" height="21.91" >
+                                                                <use xlink:href="#like-icon"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href ="share" class="item-icons__single share" title="Поделиться">
+                                                            <span class="visually-hidden">Поделиться</span>
+                                                            <svg class="icon-svg" width="17.25" height="19.09" >
+                                                                <use xlink:href="#share-icon"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="item-link-block">
+                                                    <div class="item-img" style="background-image: url(./img/item-logan.png)"></div>
+                                                    <div class="item-name" title="Renault Logan SXPA 16PA5RB">Renault Logan SXPA 16PA5RB</div>
+                                                    <ul class="item-description flex-block">
+                                                        <li class="item-description__li item-body">Седан</li>
+                                                        <li class="item-description__li item-year">2018 г.в.</li>
+                                                        <li class="item-description__li item-color">черный</li>
+                                                        <li class="item-description__li item-kpp">АКПП</li>
+                                                        <li class="item-description__li item-capacity">2.0 л</li>
+                                                    </ul>
+                                                    <div class="item-price-of flex-block">
+                                                        <div class="price-of__value this-number">1650000<span> ₽</span></div>
+                                                    </div>
+                                                    <div class="item-price-new flex-block">
+                                                        <div class="price-new__value this-number">1600000<span> ₽</span></div>
+                                                        <span class="tooltip" data-tooltip-content="#consultation-tooltip"></span>
+                                                    </div>
+                                                    </a>
+                                                    <a href="#consultation-modal" class="item-price-link modal-click">получить консультацию</a>
+                                                </div>  
+                                    </div>
+                                    <div class="swiper-slide">
+                                            <div class="catalog-item with-price-of with-price-new">
+                                                    <div class="item-icons">
+                                                            <a href ="like" class="item-icons__single like" title="Добавить в избранное">
+                                                                <span class="visually-hidden">Избранное</span>
+                                                                <svg class="icon-svg" width="25" height="21.91" >
+                                                                    <use xlink:href="#like-icon"></use>
+                                                                </svg>
+                                                            </a>
+                                                            <a href ="share" class="item-icons__single share" title="Поделиться">
+                                                                <span class="visually-hidden">Поделиться</span>
+                                                                <svg class="icon-svg" width="17.25" height="19.09" >
+                                                                    <use xlink:href="#share-icon"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    <a href="#" class="item-link-block">
+                                                    <div class="item-img" style="background-image: url(./img/item-mazda.png)"></div>
+                                                    <div class="item-name">Mazda 6 SD Drive 2.0AT Luxe</div>
+                                                    <ul class="item-description flex-block">
+                                                        <li class="item-description__li item-body">Седан</li>
+                                                        <li class="item-description__li item-year">2018 г.в.</li>
+                                                        <li class="item-description__li item-color">черный</li>
+                                                        <li class="item-description__li item-kpp">АКПП</li>
+                                                        <li class="item-description__li item-capacity">2.0 л</li>
+                                                    </ul>
+                                                    <div class="item-price-of flex-block">
+                                                        <div class="price-of__value this-number">1650000<span> ₽</span></div>
+                                                    </div>
+                                                    <div class="item-price-new flex-block">
+                                                        <div class="price-new__value this-number">1600000<span> ₽</span></div>
+                                                        <span class="tooltip" data-tooltip-content="#consultation-tooltip"></span>
+                                                    </div>
+                                                    </a>
+                                                    <a href="#consultation-modal" class="item-price-link modal-click">получить консультацию</a>
+                                                </div>  
+                                    </div>
+                                    <div class="swiper-slide"   >
+                                            <div class="catalog-item with-price-of with-price-new">
+                                                    <a href="#" class="item-link-block">
+                                                    <div class="item-discount">выгода до <span class="this-number">150000</span> ₽</div>
+                                                    <div class="item-img" style="background-image: url(./img/item-catalog.png)"></div>
+                                                    <div class="item-name">Mitsubishi ASX</div>
+                                                    <ul class="item-description flex-block">
+                                                        <li class="item-description__li item-body">Седан</li>
+                                                        <li class="item-description__li item-year">2018 г.в.</li>
+                                                        <li class="item-description__li item-color">черный</li>
+                                                        <li class="item-description__li item-kpp">АКПП</li>
+                                                        <li class="item-description__li item-capacity">2.0 л</li>
+                                                    </ul>
+                                                    <div class="item-price-of flex-block">
+                                                        <div class="price-of__value this-number">1650000<span> ₽</span></div>
+                                                    </div>
+                                                    <div class="item-price-new flex-block">
+                                                        <div class="price-new__value this-number">1600000<span> ₽</span></div>
+                                                        <span class="tooltip" data-tooltip-content="#consultation-tooltip"></span>
+                                                    </div>
+                                                    </a>
+                                                    <a href="#consultation-modal" class="item-price-link modal-click">получить консультацию</a>
+                                                </div>  
+                                    </div>
+                                    <div class="swiper-slide">
+                                            <div class="catalog-item with-price-of with-price-new">
+                                                    <div class="item-icons">
+                                                        <a href ="like" class="item-icons__single like" title="Добавить в избранное">
+                                                            <span class="visually-hidden">Избранное</span>
+                                                            <svg class="icon-svg" width="25" height="21.91" >
+                                                                <use xlink:href="#like-icon"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href ="share" class="item-icons__single share" title="Поделиться">
+                                                            <span class="visually-hidden">Поделиться</span>
+                                                            <svg class="icon-svg" width="17.25" height="19.09" >
+                                                                <use xlink:href="#share-icon"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="item-link-block">
+                                                    <div class="item-img" style="background-image: url(./img/item-logan.png)"></div>
+                                                    <div class="item-name" title="Renault Logan SXPA 16PA5RB">Renault Logan SXPA 16PA5RB</div>
+                                                    <ul class="item-description flex-block">
+                                                        <li class="item-description__li item-body">Седан</li>
+                                                        <li class="item-description__li item-year">2018 г.в.</li>
+                                                        <li class="item-description__li item-color">черный</li>
+                                                        <li class="item-description__li item-kpp">АКПП</li>
+                                                        <li class="item-description__li item-capacity">2.0 л</li>
+                                                    </ul>
+                                                    <div class="item-price-of flex-block">
+                                                        <div class="price-of__value this-number">1650000<span> ₽</span></div>
+                                                    </div>
+                                                    <div class="item-price-new flex-block">
+                                                        <div class="price-new__value this-number">1600000<span> ₽</span></div>
+                                                        <span class="tooltip" data-tooltip-content="#consultation-tooltip"></span>
+                                                    </div>
+                                                    </a>
+                                                    <a href="#consultation-modal" class="item-price-link modal-click">получить консультацию</a>
+                                                </div>  
+                                    </div>
+                                    <div class="swiper-slide">
+                                            <div class="catalog-item with-price-of with-price-new">
+                                                    <div class="item-icons">
+                                                            <a href ="like" class="item-icons__single like" title="Добавить в избранное">
+                                                                <span class="visually-hidden">Избранное</span>
+                                                                <svg class="icon-svg" width="25" height="21.91" >
+                                                                    <use xlink:href="#like-icon"></use>
+                                                                </svg>
+                                                            </a>
+                                                            <a href ="share" class="item-icons__single share" title="Поделиться">
+                                                                <span class="visually-hidden">Поделиться</span>
+                                                                <svg class="icon-svg" width="17.25" height="19.09" >
+                                                                    <use xlink:href="#share-icon"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    <a href="#" class="item-link-block">
+                                                    <div class="item-img" style="background-image: url(./img/item-mazda.png)"></div>
+                                                    <div class="item-name">Mazda 6 SD Drive 2.0AT Luxe</div>
+                                                    <ul class="item-description flex-block">
+                                                        <li class="item-description__li item-body">Седан</li>
+                                                        <li class="item-description__li item-year">2018 г.в.</li>
+                                                        <li class="item-description__li item-color">черный</li>
+                                                        <li class="item-description__li item-kpp">АКПП</li>
+                                                        <li class="item-description__li item-capacity">2.0 л</li>
+                                                    </ul>
+                                                    <div class="item-price-of flex-block">
+                                                        <div class="price-of__value this-number">1650000<span> ₽</span></div>
+                                                    </div>
+                                                    <div class="item-price-new flex-block">
+                                                        <div class="price-new__value this-number">1600000<span> ₽</span></div>
+                                                        <span class="tooltip" data-tooltip-content="#consultation-tooltip"></span>
+                                                    </div>
+                                                    </a>
+                                                    <a href="#consultation-modal" class="item-price-link modal-click">получить консультацию</a>
+                                                </div>  
+                                    </div>
+                                    <div class="swiper-slide"   >
+                                            <div class="catalog-item with-price-of with-price-new">
+                                                    <a href="#" class="item-link-block">
+                                                    <div class="item-discount">выгода до <span class="this-number">150000</span> ₽</div>
+                                                    <div class="item-img" style="background-image: url(./img/item-catalog.png)"></div>
+                                                    <div class="item-name">Mitsubishi ASX</div>
+                                                    <ul class="item-description flex-block">
+                                                        <li class="item-description__li item-body">Седан</li>
+                                                        <li class="item-description__li item-year">2018 г.в.</li>
+                                                        <li class="item-description__li item-color">черный</li>
+                                                        <li class="item-description__li item-kpp">АКПП</li>
+                                                        <li class="item-description__li item-capacity">2.0 л</li>
+                                                    </ul>
+                                                    <div class="item-price-of flex-block">
+                                                        <div class="price-of__value this-number">1650000<span> ₽</span></div>
+                                                    </div>
+                                                    <div class="item-price-new flex-block">
+                                                        <div class="price-new__value this-number">1600000<span> ₽</span></div>
+                                                        <span class="tooltip" data-tooltip-content="#consultation-tooltip"></span>
+                                                    </div>
+                                                    </a>
+                                                    <a href="#consultation-modal" class="item-price-link modal-click">получить консультацию</a>
+                                                </div>  
+                                    </div>
+                                    <div class="swiper-slide">
+                                            <div class="catalog-item with-price-of with-price-new">
+                                                    <div class="item-icons">
+                                                        <a href ="like" class="item-icons__single like" title="Добавить в избранное">
+                                                            <span class="visually-hidden">Избранное</span>
+                                                            <svg class="icon-svg" width="25" height="21.91" >
+                                                                <use xlink:href="#like-icon"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href ="share" class="item-icons__single share" title="Поделиться">
+                                                            <span class="visually-hidden">Поделиться</span>
+                                                            <svg class="icon-svg" width="17.25" height="19.09" >
+                                                                <use xlink:href="#share-icon"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="item-link-block">
+                                                    <div class="item-img" style="background-image: url(./img/item-logan.png)"></div>
+                                                    <div class="item-name" title="Renault Logan SXPA 16PA5RB">Renault Logan SXPA 16PA5RB</div>
+                                                    <ul class="item-description flex-block">
+                                                        <li class="item-description__li item-body">Седан</li>
+                                                        <li class="item-description__li item-year">2018 г.в.</li>
+                                                        <li class="item-description__li item-color">черный</li>
+                                                        <li class="item-description__li item-kpp">АКПП</li>
+                                                        <li class="item-description__li item-capacity">2.0 л</li>
+                                                    </ul>
+                                                    <div class="item-price-of flex-block">
+                                                        <div class="price-of__value this-number">1650000<span> ₽</span></div>
+                                                    </div>
+                                                    <div class="item-price-new flex-block">
+                                                        <div class="price-new__value this-number">1600000<span> ₽</span></div>
+                                                        <span class="tooltip" data-tooltip-content="#consultation-tooltip"></span>
+                                                    </div>
+                                                    </a>
+                                                    <a href="#consultation-modal" class="item-price-link modal-click">получить консультацию</a>
+                                                </div>  
+                                    </div>
+                                    <div class="swiper-slide">
+                                            <div class="catalog-item with-price-of with-price-new">
+                                                    <div class="item-icons">
+                                                            <a href ="like" class="item-icons__single like" title="Добавить в избранное">
+                                                                <span class="visually-hidden">Избранное</span>
+                                                                <svg class="icon-svg" width="25" height="21.91" >
+                                                                    <use xlink:href="#like-icon"></use>
+                                                                </svg>
+                                                            </a>
+                                                            <a href ="share" class="item-icons__single share" title="Поделиться">
+                                                                <span class="visually-hidden">Поделиться</span>
+                                                                <svg class="icon-svg" width="17.25" height="19.09" >
+                                                                    <use xlink:href="#share-icon"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    <a href="#" class="item-link-block">
+                                                    <div class="item-img" style="background-image: url(./img/item-mazda.png)"></div>
+                                                    <div class="item-name">Mazda 6 SD Drive 2.0AT Luxe</div>
+                                                    <ul class="item-description flex-block">
+                                                        <li class="item-description__li item-body">Седан</li>
+                                                        <li class="item-description__li item-year">2018 г.в.</li>
+                                                        <li class="item-description__li item-color">черный</li>
+                                                        <li class="item-description__li item-kpp">АКПП</li>
+                                                        <li class="item-description__li item-capacity">2.0 л</li>
+                                                    </ul>
+                                                    <div class="item-price-of flex-block">
+                                                        <div class="price-of__value this-number">1650000<span> ₽</span></div>
+                                                    </div>
+                                                    <div class="item-price-new flex-block">
+                                                        <div class="price-new__value this-number">1600000<span> ₽</span></div>
+                                                        <span class="tooltip" data-tooltip-content="#consultation-tooltip"></span>
+                                                    </div>
+                                                    </a>
+                                                    <a href="#consultation-modal" class="item-price-link modal-click">получить консультацию</a>
+                                                </div>  
+                                    </div>
+                                </div>
+                                <div class="swiper-button swiper-button-next">
+                                    <div class="swiper-button__arrow arrow-next"></div>
+                                </div>
+                                <div class="swiper-button swiper-button-prev">
+                                    <div class="swiper-button__arrow arrow-prev"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
                 </div>
             </div>
         </section>
         <section class="white">
+            <div class="new-container how-much">
+                <h3 class="how-much__title">Сколько должна стоить первая машина?</h3>
+                <div class="how-much__description">
+                        Что бы мы не покупали, аспект: дорогой или нет - зависит от возможностей покупателя. Кому-то цена б\у Калины покажется неподъемной, а кто-то может новенькие БМВ менять как перчатки. Но если есть возможность купить большой внедорожник или седан бизнес-класса, почему бы не выбрать машину комфортнее, безопаснее и солиднее?.. Правда такие машины не стоит покупать на последние деньги.
+                </div>
+                <div class="how-much__this-day">Только в этот день</div>
+                <ul class="how-much__list">
+                    <li class="how-much__list--li">специальные условия на покупку автомобилей;</li>
+                    <li class="how-much__list--li"><b>выгода до 200 000 р.</b> на определенные модели Subaru*;</li>
+                    <li class="how-much__list--li">экстремальные <b>тест-драйвы</b>;</li>
+                    <li class="how-much__list--li">увлекательный <b>мастер-класс для детей</b>;</li>
+                    <li class="how-much__list--li">легкий фуршет.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="white" id="treid-in">
+            <div class="new-container treid-in offer-block flex-block">
+                <div class="offer-block__img">
+                    <div class="offer-block__img--image" style="background-image: url(./img/treid-in.svg)" itemprop="image" content="http://new-tts.tw1.ru/land/img/treid-in.svg"></div>
+                </div>
+                <div class="offer-block__description">
+                    <h3 class="offer-block__description--title" itemprop="name">BMW X6 с выгодой до 150 000 <span>₽</span><br> по программе Трейд-ин</h3>
+                    <div class="offer-block__description--text" itemprop="description">
+                            Программа Трейд-ин – это максимально удобный и быстрый способ обменять подержанный автомобиль на новый.<br><br> ТрансТехСервис выкупит у вас авто по рыночной стоимости. Кроме того, участники программы получают преимущество в виде выгоды на покупку нового автомобиля.
+                    </div>
+                    <div class="offer-block__form">
+                        <h4 class="offer-block__form--title">Оставьте заявку на расчет кредита</h4>
+                        <form class="offer-block__form--body flex-block">
+                            <div class="form-input">
+                                <div class ="required-before">
+                                    <label class="visually-hidden" for="phone-request">Телефон</label>
+                                    <input type="tel" name="phone" id="phone-request" class="input mask-phone invalid__data" placeholder="+7 Введите 10 цифр телефона">
+                                </div>
+                                <p class="invalid__data--text">Введите корректные данные</p>
+                            </div>
+                            <a href="#trade-in-modal" class="btn-blue form__body--btn-blue modal-click" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">Получить выгоду</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="grey">
+                <div style="display:none;" id="video1">
+                        <video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
+                            <source src="./video/bmw.mp4" type="video/mp4">
+                             Ваш браузер не поддерживает HTML5 видео
+                        </video>
+                    </div>
+            <div class="new-container test-drive offer-block flex-block ">
+                    <div class="offer-block__slider"> 
+                        <div class="top-slider offer-slider swiper-container">
+                            <div class="swiper-wrapper lightgallery">
+                                <a data-poster="./img/video-img2.jpg"  data-html="#video1" class="swiper-slide lightgallery__item slide-video" itemprop="image">
+                                    <img src="./img/video-img2.jpg" class="slide-img" alt="" />
+                                </a>
+                                <a href="./img/bmwX6-2.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                    <img src="./img/bmwX6-2.jpg" class="slide-img" alt="" />
+                                </a>
+                                <a href="./img/bmwX6-3.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                    <img src="./img/bmwX6-3.jpg" class="slide-img" alt="" />
+                                </a>
+                                <a href="./img/bmwX6-4.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                    <img src="./img/bmwX6-4.jpg" class="slide-img" alt="" />
+                                </a>
+                                <a href="./img/bmwX6-5.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                    <img src="./img/bmwX6-5.jpg" class="slide-img" alt="" />
+                                </a>
+                                <a href="./img/bmwX6-6.jpg" class="swiper-slide lightgallery__item" itemprop="image"> 
+                                    <img src="./img/bmwX6-6.jpg" class="slide-img" alt="" />
+                                </a>
+                              <!--   <a href="./img/bmwX6-7.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                    <img src="./img/bmwX6-7.jpg" class="slide-img" alt="" />
+                                </a>
+                                <a href="./img/bmwX6-8.jpg" class="swiper-slide lightgallery__item" itemprop="image">
+                                    <img src="./img/bmwX6-8.jpg" class="slide-img" alt="" />
+                                </a> -->
+                            </div>
+                            <div class="swiper-button swiper-button-next"></div>
+                            <div class="swiper-button swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="offer-block__description">
+                            <h3 class="offer-block__description--title" itemprop="name">Тест-драйв BMW X6</h3>
+                            <div class="offer-block__description--text" itemprop="description">
+                                Внешне BMW X6 невозможно перепутать ни с каким другим автомобилем. Но главное – не это, а то, какие эмоции испытываешь за рулем этого автомобиля. Ходовая часть BMW X6 задает высокую планку. BMW xDrive гарантирует превосходное сцепление колес с покрытием на любой дороге и в любую погоду. Отменная курсовая устойчивость и отзывчивость покоряют сразу и навсегда. В качестве опции предлагаются адаптивные подвески и активное рулевое управления. Для еще большего удовольствия за рулем.
+                            </div>
+                            <div class="offer-block__form">
+                                <h4 class="offer-block__form--title">Откройте для себя удовольствие за рулем BMW!</h4>
+                                <form class="offer-block__form--body flex-block">
+                                    <div class="form-input">
+                                        <div class ="required-before">
+                                            <label class="visually-hidden" for="phone-request">Телефон</label>
+                                            <input type="tel" name="phone" id="phone-request" class="input mask-phone invalid__data" placeholder="+7 Введите 10 цифр телефона">
+                                        </div>
+                                        <p class="invalid__data--text">Введите корректные данные</p>
+                                    </div>
+                                    <a href="#test-drive-modal" class="btn-blue form__body--btn-blue modal-click" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">записаться</a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="offer-block__nav-slider">
+                                <div class="nav-slider nav-offer swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide slide-video-img">
+                                            <img src="./img/video-img2.jpg" class="slide-img" alt="bmwX6" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/bmwX6-2.jpg" class="slide-img" alt="" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/bmwX6-3.jpg" class="slide-img" alt="" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/bmwX6-4.jpg" class="slide-img" alt="" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/bmwX6-5.jpg" class="slide-img" alt="" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/bmwX6-6.jpg" class="slide-img" alt="" />
+                                        </div>
+<!--                                         <div class="swiper-slide">
+                                            <img src="./img/bmwX6-7.jpg" class="slide-img" alt=""/>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/bmwX6-8.jpg" class="slide-img" alt="" />
+                                        </div> -->
+                                    </div>
+                                    <div class="swiper-button swiper-button-next">
+                                        <div class="swiper-button__arrow arrow-next"></div>
+                                    </div>
+                                    <div class="swiper-button swiper-button-prev">
+                                        <div class="swiper-button__arrow arrow-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+            </div>
+        </section>
+        <section class="white">
             <div class="new-container address-salon">
-                <h3 class="address-salon__title">Автоцентры ТрансТехСервис</h3> 
+                <h3 class="address-salon__title">Адреса салонов</h3> 
                 <div class="address-salon__block flex-block">
                     <div class="address-salon__block--location">
                         <div class="background-location flex-block">
@@ -445,25 +1102,335 @@
         </section>
     </main>
     <footer class="grey footer-section">
-            <div class="new-container footer-auction flex-block" itemscope itemtype="http://schema.org/Organization">
-                <div class="footer-land__logo flex-block">
-                    <a href="/land/" class="logo__img footer-land__logo--img" itemprop="url"></a>
-                    <div class="footer-land__auction" itemprop="description" content="Автомобильный аукцион">Автомобильный <br>аукцион</div>
+        <div class="new-container footer-land flex-block">
+            <div class="footer-land__dealer">Официальный дилер<br>BMW в Казани</div>
+            <div class="footer-land__address flex-block" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+<!--                    <div class="footer-land__address--location">
+                       <span class="city" itemprop="addressLocality">Набережные челны</span>
+                   </div> -->
+                   <div class = "footer-land__address--autosalon-select">
+                    <select class="select-default">
+                        <option>Город</option>
+                        <option itemprop="addressLocality" title="Набережные челны">Набережные челны</option>
+                        <option itemprop="addressLocality" title="Казань">Казань</option>
+                        <option itemprop="addressLocality" title="Чебоксары">Чебоксары</option>
+                    </select>
                 </div>
-                <div class="footer-tel flex-block">
-                    <span>Телефон для справок:</span>
-                    <a class="footer-tel__href" href="tel:+7(8552)910562">+7 (8552) 91-05-62</a>
-                </div>
-            </div>
+                   <div class = "footer-land__address--autosalon-select">
+                       <select class="select-default">
+                           <option>Автосалон</option>
+                           <option itemprop="streetAddress" title="Автодорога №1 Автодорога №1 Автодорога №1">Автодорога №1 Автодорога №1 Автодорога №1</option>
+                           <option itemprop="streetAddress" title="Автодорога №2">Автодорога №2</option>
+                           <option itemprop="streetAddress" title="Автодорога №3">Автодорога №3</option>
+                       </select>
+                   </div>
+                   <a href="javascript: void(0)" class="footer-land__address--tel" itemprop="telephone" itemscope itemtype="http://schema.org/Organization">+7 (***) ***-**-**</a>
+                   <!-- Ссылка с активным номером телефона -->
+                    <!--  <a href="tel:+7(8552)910562" class="header-land__address--tel active"  itemprop="telephone">+7 (8552) 91-05-62</a> -->
+               </div>
+               <a href="#request-modal" class="btn-blue footer-land__btn-white modal-click" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">Оставить заявку</a>
+        </div>
     </footer>
     <a href="#" class="top-button"></a>
-                                                  
+    <section class="white subscribe">
+        <div class="new-container subscribe-block flex-block">
+            <span class="subscribe-block__title">Узнайте о выгодных предложениях первым!</span>
+            <form class="subscribe-block__form flex-block">
+                    <div class="form-input">
+                        <div class ="required-before">
+                            <label class="visually-hidden" for="email">Телефон</label>
+                            <input type="email" name="email" id="email" class="input" placeholder="Введите свой email">
+                        </div>
+                        <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                    </div>
+                    <a href="#" class="btn-blue subscribe-block--btn-blue desctop" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">Узнать</a>
+                    <a href="#subscribe-modal" class="btn-blue subscribe-block--btn-blue mobile modal-click" itemprop="potentialAction" itemscope itemtype="http://schema.org/ChooseAction">Подписаться на рассылку</a>
+                </form>
+        </div>
+    </section>
+
+    <div class="tooltip_templates">
+        <div id="consultation-tooltip" class ="tooltip_open">
+            <p>Если Вы желаете получить консультацию об этом автомобиле, пожалуйста, оставьте заявку на обратный звонок и наши специалисты свяжутся с Вами.</p>
+        </div>
+        <div id="legal-tooltip" class ="tooltip_open">
+            <p>Если вы желаете приобрести автомобиль на юрлицо, пожалуйста, посетите специальный раздел нашего сайта для получения более подробной информации.</p>
+        </div>
+    </div>
+    <div id="request-modal" class="modal popup request-popup mobile-popup">
+        <h3 class="popup__title">Оставить заявку</h3>
+        <form class="popup__form" action="#" method="post">
+            <div class="popup__form--select-salon pb-20">
+                <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                <div class ="required-before">
+                    <select class="select-default">
+                        <option>Автосалон</option>
+                        <option>Автодорога №1</option>
+                        <option>Автодорога №2</option>
+                        <option>Автодорога №3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="popup__form--name pb-20">
+                <p class="invalid__data--text">Введите корректные данные</p>
+                <div class ="required-before">
+                    <label class="visually-hidden" for="name-request">Имя</label>
+                    <input type="text" name="name" id="name-request" class="form__input invalid__data" placeholder="Имя">
+                </div>
+            </div>
+            <div class="popup__form--phone pb-20">
+                    <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                    <div class ="required-before">
+                        <label class="visually-hidden" for="phone-request">Телефон</label>
+                        <input type="tel" name="phone" id="phone-request" class="form__input mask-phone" placeholder="+7 Введите 10 цифр телефона">
+                    </div>
+                </div>
+                <div class="popup__form--personal-data">
+                        <input class="personal-data__checkbox" type="checkbox" name="request-personal-data" id="request-personal-data" value="no">
+                        <label class="personal-data__checkbox-label" for="request-personal-data">Даю согласие на обработку персональных данных</label>
+                </div>
+               <div class="popup__form--compliance">
+                    Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="compliance-link">политикой конфиденциальности</a>.
+                </div>
+                <!-- <button type="submit" class="btn-blue popup__form--btn-blue">отправить</button> -->
+                <a href="#" class="btn-blue popup__form--btn-blue">отправить</a>
+        </form>
+        </div>
+      <div id="consultation-modal" class="modal popup consultation-popup mobile-popup">
+        <h3 class="popup__title">Получить консультацию</h3>
+            <form class="popup__form" action="#" method="post" autocomplete="off">
+                <div class="popup__form--select-salon pb-20">
+                    <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                    <div class ="required-before">
+                        <select class="select-default">
+                            <option>Автосалон</option>
+                            <option>Автодорога №1 Автодорога №1 Автодорога №1</option>
+                            <option>Автодорога №2</option>
+                            <option>Автодорога №3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="popup__form--name pb-20">
+                    <p class="invalid__data--text">Введите корректные данные</p>
+                    <div class ="required-before">
+                        <label class="visually-hidden" for="name-request">Имя</label>
+                        <input type="text" name="name" id="name-request" class="form__input invalid__data" placeholder="Имя" autocomplete="off">
+                    </div>
+                </div>
+                <div class="popup__form--phone pb-20">
+                        <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                        <div class ="required-before">
+                            <label class="visually-hidden" for="phone-request">Телефон</label>
+                            <input type="tel" name="phone" id="phone-request" class="form__input mask-phone" placeholder="+7 Введите 10 цифр телефона" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="popup__form--personal-data">
+                            <input class="personal-data__checkbox" type="checkbox" name="consultation-personal-data" id="consultation-personal-data" value="no">
+                            <label class="personal-data__checkbox-label" for="consultation-personal-data">Даю согласие на обработку персональных данных</label>
+                    </div>
+                    <div class="popup__form--compliance">
+                        Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="compliance-link">политикой конфиденциальности</a>.
+                    </div>
+                   <!--  <button type="submit" class="btn-blue popup__form--btn-blue">отправить</button> -->
+                    <a href="#" class="btn-blue popup__form--btn-blue">отправить</a>
+            </form>
+          </div>
+          <div id="autocredit-modal" class="modal popup credit-popup mobile-popup">
+                <h3 class="popup__title">Рассчитать кредит</h3>
+                    <form class="popup__form" action="#" method="post" autocomplete="off">
+                        <div class="popup__form--select-salon pb-20">
+                            <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                            <div class ="required-before">
+                                <select class="select-default">
+                                    <option>Автосалон</option>
+                                    <option>Автодорога №1 Автодорога №1 Автодорога №1</option>
+                                    <option>Автодорога №2</option>
+                                    <option>Автодорога №3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="popup__form--name pb-20">
+                            <p class="invalid__data--text">Введите корректные данные</p>
+                            <div class ="required-before">
+                                <label class="visually-hidden" for="name-request">Имя</label>
+                                <input type="text" name="name" id="name-request" class="form__input invalid__data" placeholder="Имя" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="popup__form--phone pb-20">
+                                <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                <div class ="required-before">
+                                    <label class="visually-hidden" for="phone-request">Телефон</label>
+                                    <input type="tel" name="phone" id="phone-request" class="form__input mask-phone" placeholder="+7 Введите 10 цифр телефона" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="popup__form--personal-data">
+                                    <input class="personal-data__checkbox" type="checkbox" name="autocredit-personal-data" id="autocredit-personal-data" value="no">
+                                    <label class="personal-data__checkbox-label" for="autocredit-personal-data">Даю согласие на обработку персональных данных</label>
+                            </div>
+                            <div class="popup__form--compliance">
+                                Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="compliance-link">политикой конфиденциальности</a>.
+                            </div>
+                           <!--  <button type="submit" class="btn-blue popup__form--btn-blue">отправить</button> -->
+                            <a href="#" class="btn-blue popup__form--btn-blue">отправить</a>
+                    </form>
+                  </div>
+                  <div id="price-modal" class="modal popup price-popup mobile-popup">
+                    <h3 class="popup__title">Узнать цену</h3>
+                        <form class="popup__form" action="#" method="post" autocomplete="off">
+                            <div class="popup__form--select-salon pb-20">
+                                <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                <div class ="required-before">
+                                    <select class="select-default">
+                                        <option>Автосалон</option>
+                                        <option>Автодорога №1 Автодорога №1 Автодорога №1</option>
+                                        <option>Автодорога №2</option>
+                                        <option>Автодорога №3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="popup__form--name pb-20">
+                                <p class="invalid__data--text">Введите корректные данные</p>
+                                <div class ="required-before">
+                                    <label class="visually-hidden" for="name-request">Имя</label>
+                                    <input type="text" name="name" id="name-request" class="form__input invalid__data" placeholder="Имя" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="popup__form--phone pb-20">
+                                    <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                    <div class ="required-before">
+                                        <label class="visually-hidden" for="phone-request">Телефон</label>
+                                        <input type="tel" name="phone" id="phone-request" class="form__input mask-phone" placeholder="+7 Введите 10 цифр телефона" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="popup__form--personal-data">
+                                        <input class="personal-data__checkbox" type="checkbox" name="price-personal-data" id="price-personal-data" value="no">
+                                        <label class="personal-data__checkbox-label" for="price-personal-data">Даю согласие на обработку персональных данных</label>
+                                </div>
+                                <div class="popup__form--compliance">
+                                    Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="compliance-link">политикой конфиденциальности</a>.
+                                </div>
+                               <!--  <button type="submit" class="btn-blue popup__form--btn-blue">отправить</button> -->
+                                <a href="#" class="btn-blue popup__form--btn-blue">отправить</a>
+                        </form>
+                      </div>
+                      <div id="trade-in-modal" class="modal popup treid-in-popup mobile-popup">
+                            <h3 class="popup__title">оставить заявку на трейд-ин</h3>
+                                <form class="popup__form" action="#" method="post" autocomplete="off">
+                                    <div class="popup__form--select-salon pb-20">
+                                        <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                        <div class ="required-before">
+                                            <select class="select-default">
+                                                <option>Автосалон</option>
+                                                <option>Автодорога №1 Автодорога №1 Автодорога №1</option>
+                                                <option>Автодорога №2</option>
+                                                <option>Автодорога №3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="popup__form--name pb-20">
+                                        <p class="invalid__data--text">Введите корректные данные</p>
+                                        <div class ="required-before">
+                                            <label class="visually-hidden" for="name-request">Имя</label>
+                                            <input type="text" name="name" id="name-request" class="form__input invalid__data" placeholder="Имя" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="popup__form--phone pb-20">
+                                            <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                            <div class ="required-before">
+                                                <label class="visually-hidden" for="phone-request">Телефон</label>
+                                                <input type="tel" name="phone" id="phone-request" class="form__input mask-phone" placeholder="+7 Введите 10 цифр телефона" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="popup__form--personal-data">
+                                                <input class="personal-data__checkbox" type="checkbox" name="trade-in-personal-data" id="trade-in-personal-data" value="no">
+                                                <label class="personal-data__checkbox-label" for="trade-in-personal-data">Даю согласие на обработку персональных данных</label>
+                                        </div>
+                                        <div class="popup__form--compliance">
+                                            Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="compliance-link">политикой конфиденциальности</a>.
+                                        </div>
+                                       <!--  <button type="submit" class="btn-blue popup__form--btn-blue">отправить</button> -->
+                                        <a href="#" class="btn-blue popup__form--btn-blue">отправить</a>
+                                </form>
+                              </div>
+                              <div id="test-drive-modal" class="modal popup test-drive-popup mobile-popup">
+                                    <h3 class="popup__title">оставить заявку на тест драйв</h3>
+                                        <form class="popup__form" action="#" method="post" autocomplete="off">
+                                            <div class="popup__form--select-salon pb-20">
+                                                <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                                <div class ="required-before">
+                                                    <select class="select-default">
+                                                        <option>Автосалон</option>
+                                                        <option>Автодорога №1 Автодорога №1 Автодорога №1</option>
+                                                        <option>Автодорога №2</option>
+                                                        <option>Автодорога №3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="popup__form--name pb-20">
+                                                <p class="invalid__data--text">Введите корректные данные</p>
+                                                <div class ="required-before">
+                                                    <label class="visually-hidden" for="name-request">Имя</label>
+                                                    <input type="text" name="name" id="name-request" class="form__input invalid__data" placeholder="Имя" autocomplete="off">
+                                                </div>
+                                            </div>
+                                            <div class="popup__form--phone pb-20">
+                                                    <!-- <p class="invalid__data--text">Введите корректные данные</p> -->
+                                                    <div class ="required-before">
+                                                        <label class="visually-hidden" for="phone-request">Телефон</label>
+                                                        <input type="tel" name="phone" id="phone-request" class="form__input mask-phone" placeholder="+7 Введите 10 цифр телефона" autocomplete="off">
+                                                    </div>
+                                                </div>
+                                                <div class="popup__form--personal-data">
+                                                        <input class="personal-data__checkbox" type="checkbox" name="test-drive-personal-data" id="test-drive-personal-data" value="no">
+                                                        <label class="personal-data__checkbox-label" for="test-drive-personal-data">Даю согласие на обработку персональных данных</label>
+                                                </div>
+                                                <div class="popup__form--compliance">
+                                                    Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="compliance-link">политикой конфиденциальности</a>.
+                                                </div>
+                                               <!--  <button type="submit" class="btn-blue popup__form--btn-blue">отправить</button> -->
+                                                <a href="#" class="btn-blue popup__form--btn-blue">отправить</a>
+                                        </form>
+                                      </div>
+                                    <div id="catalog-fitler" class="modal popup catalog-fitler-popup mobile-popup">
+                                        <span class="popup-filter__title">Фильтр</span>
+                                        <div class="popup-filter__body"></div>    
+                                        <a href="#" class="btn-blue popup__form--btn-blue filter-button">Подобрать</a>
+                                    </div>
+                                    <div id="subscribe-modal" class="modal popup subscribe-modal-popup mobile-popup">
+                                            <div class="subscribe-modal-popup__block">
+                                            <h3 class="popup__title">Узнайте о выгодных предложениях первым!</h3>
+                                                <form class="popup__form" action="#" method="post" autocomplete="off">
+                                                    <div class="popup__form--name pb-20">
+                                                        <div class="required-before">
+                                                        <label class="visually-hidden" for="subscribe-request">Введите ваш email</label>
+                                                        <input type="text" name="subscribe-request" id="subscribe-request" class="form__input" placeholder="Введите свой email" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                       <!--  <button type="submit" class="btn-blue popup__form--btn-blue">отправить</button> -->
+                                                        <a href="#" class="btn-blue popup__form--btn-blue subscribe-popup-btn">Подписаться</a>
+                                                </form>
+                                            </div>
+                                    </div>                                                            
     <!--Jquery 3.3.1-->
     <script src="./js/librarys/jquery-3.3.1.min.js"></script>
     <!--Select2 JS-->
     <script src="./js/plugins/select2.min.js"></script>
+    <!--Swiper-Slider JS-->
+    <script src="./js/plugins/swiper.min.js"></script>
+    <!--LightGallery JS-->
+    <script src="./js/plugins/lightgallery/lightgallery-all.min.js"></script>
      <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<!--      <script src="./js/plugins/lightgallery/lg-thumbnail.min.js"></script>
+     <script src="./js/plugins/lightgallery/lg-fullscreen.min.js"></script> -->
+     <!-- ToolTip JS-->
+     <script src="./js/plugins/tooltipster.bundle.min.js"></script>
+    <!--Modal JS-->
+    <script src="./js/plugins/jquery.modal.min.js"></script>
+    <!--MaskedInput JS-->
+    <script src="./js/plugins/jquery.maskedinput.min.js"></script>
+    <!-- Video JS-->
+    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
     <!--Scrollbar JS-->
     <script src="./js/plugins/jquery.custom-scrollbar.js"></script>
     <!--Custom JS-->

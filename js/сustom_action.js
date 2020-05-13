@@ -6,7 +6,7 @@ $(document).ready(function() {
   
   /* Слайдер навигации для главного блока оффера */
   
-/*   var OfferSliderMainNav = new Swiper('.nav-slider.nav-offer-main', {
+  var OfferSliderMainNav = new Swiper('.nav-slider.nav-offer-main', {
       spaceBetween: 30,
       slidesPerView: 4,
       freeMode: true,
@@ -16,20 +16,20 @@ $(document).ready(function() {
           nextEl: '.swiper-button.swiper-button-next',
           prevEl: '.swiper-button.swiper-button-prev',
         },
-    }); */
+    });
   
       // Если кол-во слайдов меньше 4 в верхнем слайдере навигации, то удалаяем стрелки и убираем отступы по сторонам //
-/*   var lengthOfferSlideMainNav = $(".nav-slider.nav-offer-main .swiper-slide").length;
+  var lengthOfferSlideMainNav = $(".nav-slider.nav-offer-main .swiper-slide").length;
   
   if (lengthOfferSlideMainNav <= 4) {
       $('.nav-slider.nav-offer-main .swiper-button').remove();
       $('.offer-block-main__nav-slider').css({'padding':'0'})
-  } */
+  }
   // ---------------------- //  
   
   /* Слайдер для главного блока оффера */
   
-/*   var MainOfferSlider = new Swiper('.top-slider.main-offer-slider', {
+  var MainOfferSlider = new Swiper('.top-slider.main-offer-slider', {
       effect: 'fade',
       slidesPerView: 1,
       navigation: {
@@ -53,7 +53,7 @@ $(document).ready(function() {
       MainOfferSlider.destroy()
       $('.top-slider.main-offer-slider .swiper-button').remove();
       $('.offer-block-main__nav-slider').remove()
-  } */
+  }
   // --------------------- //
   
  /*  /* Слайдер для блока каталога */
@@ -154,19 +154,17 @@ $(document).ready(function() {
   
   // -------------------------------------------//
   
-/*   $('.price-tech__marks--single:not(.allmarks)').click(function(e){
+  $('.price-tech__marks--single:not(.allmarks)').click(function(e){
       e.preventDefault();
       $('.price-tech__marks--single:not(.allmarks)').removeClass('active');
       $(this).addClass('active')
-  }) */
+  })
   // Убираем блок с подсказкой над марками по клику на крестик ////
-/*   $('.price-tech__marks--tooltip .close-tooltip').click(function(e) {
+  $('.price-tech__marks--tooltip .close-tooltip').click(function(e) {
       e.preventDefault();
       $('.price-tech__marks--tooltip').fadeOut()
-  }) */
+  })
   
-
-
   
   //
   
@@ -189,7 +187,10 @@ $(document).ready(function() {
   
   /* LightGallery */
   $(".lightgallery").lightGallery({
-      share: false,
+    share: false,
+    videojs: true,
+    autoplayFirstVideo: false,
+    download: false
   });
   
   
