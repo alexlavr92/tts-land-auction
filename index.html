@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Посадочная страница</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="keywords" content="ТТС">
+<meta name="description" content="ТТС">
+<meta name="viewport" content="minimum-scale=1.0, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="320">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<!--Select2 CSS-->
+<link rel="stylesheet" type="text/css" href="./css/select2.min.css">
+<!--Scrollbar CSS-->
+<link rel="stylesheet" type="text/css" href="./css/jquery.custom-scrollbar.css">
+<!--Custom CSS-->
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+    <svg aria-hidden = "true" style ="width: 0; height: 0; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg" xmlns= "http://www.w3.org/1999/xlink" version="1.1">>
+        <symbol id="like-icon" viewBox="0 0 27 24">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.0127C3.47849 1.0127 0.392496 4.56444 1.10209 9.66228C1.71793 14.0866 12.3223 22.9211 13.5 22.9211C14.6777 22.9211 25.2821 14.0866 25.8979 9.66228C26.6075 4.56433 23.5215 1.0127 19.6334 1.0127C17.0414 1.0127 15.0222 2.09796 13.5 4.26848C11.9778 2.09796 9.9586 1.0127 7.36656 1.0127Z"></path>
+        </symbol>
+        <symbol id="share-icon" viewBox="0 0 19 20">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.25 0.0078125C14.4875 0.0078125 13.7562 0.309457 13.2171 0.846388C12.6779 1.38332 12.375 2.11155 12.375 2.87089C12.3756 3.05045 12.3931 3.22956 12.4274 3.40585L5.60864 7.36681C5.08928 6.92867 4.43067 6.68824 3.75 6.68832C2.9875 6.68832 2.25624 6.98996 1.71707 7.52689C1.1779 8.06382 0.875 8.79206 0.875 9.55139C0.875 10.3107 1.1779 11.039 1.71707 11.5759C2.25624 12.1128 2.9875 12.4145 3.75 12.4145C4.42961 12.4131 5.08678 12.1721 5.6049 11.7341L12.4274 15.6969C12.3931 15.8732 12.3756 16.0523 12.375 16.2319C12.375 16.9912 12.6779 17.7195 13.2171 18.2564C13.7562 18.7933 14.4875 19.095 15.25 19.095C16.0125 19.095 16.7438 18.7933 17.2829 18.2564C17.8221 17.7195 18.125 16.9912 18.125 16.2319C18.125 15.4726 17.8221 14.7443 17.2829 14.2074C16.7438 13.6705 16.0125 13.3688 15.25 13.3688C14.5697 13.3697 13.9118 13.6108 13.3932 14.0492L6.57259 10.0864C6.60687 9.91006 6.62441 9.73096 6.625 9.55139C6.62441 9.37183 6.60687 9.19272 6.57259 9.01643L13.3914 5.05547C13.9107 5.49361 14.5693 5.73404 15.25 5.73396C16.0125 5.73396 16.7438 5.43232 17.2829 4.89539C17.8221 4.35845 18.125 3.63022 18.125 2.87089C18.125 2.11155 17.8221 1.38332 17.2829 0.846388C16.7438 0.309457 16.0125 0.0078125 15.25 0.0078125Z"></path>
+        </symbol>
+        <symbol id="register-user" x="0px" y="0px" viewBox="0 0 80.13 80.13" style="enable-background:new 0 0 80.13 80.13;">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M48.355,17.922c3.705,2.323,6.303,6.254,6.776,10.817c1.511,0.706,3.188,1.112,4.966,1.112
+		c6.491,0,11.752-5.261,11.752-11.751c0-6.491-5.261-11.752-11.752-11.752C53.668,6.35,48.453,11.517,48.355,17.922z M40.656,41.984
+		c6.491,0,11.752-5.262,11.752-11.752s-5.262-11.751-11.752-11.751c-6.49,0-11.754,5.262-11.754,11.752S34.166,41.984,40.656,41.984
+		z M45.641,42.785h-9.972c-8.297,0-15.047,6.751-15.047,15.048v12.195l0.031,0.191l0.84,0.263
+		c7.918,2.474,14.797,3.299,20.459,3.299c11.059,0,17.469-3.153,17.864-3.354l0.785-0.397h0.084V57.833
+		C60.688,49.536,53.938,42.785,45.641,42.785z M65.084,30.653h-9.895c-0.107,3.959-1.797,7.524-4.47,10.088
+		c7.375,2.193,12.771,9.032,12.771,17.11v3.758c9.77-0.358,15.4-3.127,15.771-3.313l0.785-0.398h0.084V45.699
+		C80.13,37.403,73.38,30.653,65.084,30.653z M20.035,29.853c2.299,0,4.438-0.671,6.25-1.814c0.576-3.757,2.59-7.04,5.467-9.276
+		c0.012-0.22,0.033-0.438,0.033-0.66c0-6.491-5.262-11.752-11.75-11.752c-6.492,0-11.752,5.261-11.752,11.752
+		C8.283,24.591,13.543,29.853,20.035,29.853z M30.589,40.741c-2.66-2.551-4.344-6.097-4.467-10.032
+		c-0.367-0.027-0.73-0.056-1.104-0.056h-9.971C6.75,30.653,0,37.403,0,45.699v12.197l0.031,0.188l0.84,0.265
+		c6.352,1.983,12.021,2.897,16.945,3.185v-3.683C17.818,49.773,23.212,42.936,30.589,40.741z"/>
+    </symbol>
+    <symbol id="support-answer" x="0px" y="0px" viewBox="0 0 437.6 437.6" style="enable-background:new 0 0 437.6 437.6;">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M264.6,300.4h-92C97,300.4,35.4,362,35.4,437.6h366.8C401.8,362.4,340.2,300.4,264.6,300.4z"/>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M235,237.6c7.2,0,14,2.4,19.2,6.8h33.2c16.4-17.2,26.4-40,26.4-65.6c0-52.8-42.8-95.2-95.2-95.2s-95.2,42.4-95.2,95.2
+				c0,35.6,19.6,66.8,48.8,83.2c3.2-14,15.6-24.4,30-24.4H235z"/>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M77.8,186.8c1.2,10,6,19.2,12.8,26c5.2,5.2,12,9.2,19.6,11.6c-0.4-1.6-0.4-3.2-0.4-4.4v-77.6c0-1.6,0-3.2,0.4-4.8
+				c-7.6,2-14,6-19.6,11.6c-0.4,0.4-1.2,1.2-1.6,1.6v-3.2c0-7.6,0.8-15.2,2-22.4c1.2-7.6,3.2-14.8,6-21.6c2.4-7.2,5.6-14,9.6-20.4
+				c3.6-6.4,8-12.8,12.8-18.4c0.4-0.4,0.8-1.2,0.8-1.6c3.6,0.4,7.2-0.8,9.6-3.2c24.4-24.4,56.4-36.4,88-36.4c31.6,0,64,12,88,36.4
+				c2.8,2.8,6.4,3.6,9.6,3.2c0.4,0.4,0.4,1.2,0.8,1.6c4.8,5.6,9.2,12,12.8,18.4c3.6,6.4,6.8,13.2,9.6,20.4c2.4,7.2,4.4,14.4,6,22
+				c1.2,7.2,2,14.8,2,22.4v3.2c-0.4-0.8-1.2-1.2-1.6-1.6c-5.2-5.2-12-9.2-19.6-11.6c0.4,1.6,0.4,3.2,0.4,4.8V220
+				c0,1.6,0,3.2-0.4,4.4c2-0.4,4-1.2,6-2v25.2c0,2.8-0.4,5.6-0.8,7.6c-0.4,2-1.2,3.2-2,4.4c-0.8,0.8-2,1.6-3.2,2
+				c-1.6,0.4-3.2,0.8-5.2,0.8h-0.4h-73.6c-2.4-4-6.4-6.8-11.6-6.8h-32.8c-7.2,0-12.8,6-12.8,12.8c0.4,7.2,6,12.8,13.2,12.8H235
+				c4.8,0,9.2-2.8,11.6-6.8H321h2.8c2.8,0,5.2-0.8,7.6-1.6c3.2-1.2,5.6-2.8,8-5.2c2-2.4,3.6-5.2,4.8-8.8c0.8-3.2,1.6-7.2,1.6-11.6
+				v-32V214c0.4-0.4,0.8-0.8,1.2-1.2c6.8-6.8,11.6-16,12.8-26c0.4-0.4,0.8-0.4,0.8-0.8c1.2-1.2,2-3.2,2-4.8V148
+				c0-8.4-0.8-16.8-2-24.8c-2.4-8.4-4.4-16.4-7.2-24.4c-2.8-8-6.4-15.6-10.8-22.8c-4-7.2-8.8-14-14.4-20.4c-0.4-0.8-1.2-1.2-2-1.6
+				c0.8-3.6-0.4-8-3.2-10.8C294.2,14.4,256.6,0,218.6,0S143,14.4,113.8,43.2c-2.8,2.8-4,7.2-3.2,10.8c-0.8,0.4-1.2,0.8-2,1.6
+				C103,62,98.2,68.8,94.2,76s-7.6,14.8-10.8,22.8c-2.8,8-5.2,16-6.4,24.4c-1.6,8-2,16.4-2,24.8v33.2c0,2,0.8,3.6,2,4.8
+				C77.4,186.4,77.8,186.4,77.8,186.8z"/>
+    </symbol>
+    <symbol id="start-auction" viewBox="-16 0 512 512">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m270 249.789062v-19.320312c-13.691406 6.554688-28.835938 10.53125-45 10.53125s-31.308594-3.976562-45-10.53125v19.320312l45 45zm0 0"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m346.714844 41.03125 20.519531 56.378906 42.128906-15.328125 15.8125 43.449219c7.585938-3.472656 15.945313-5.53125 24.824219-5.53125 1.777344 0 3.453125.375 5.191406.527344l-17.714844-48.671875 42.523438-15.472657-20.523438-56.382812zm0 0"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m300 35.726562v-25.726562h-150v25.726562l75 37.5zm0 0"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m150 135c0 41.421875 33.578125 76 75 76s75-34.578125 75-76v-65.726562l-75 37.5-75-37.5zm0 0"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m420 271h-94.464844l-53.574218 150h88.039062v-90h60c33.136719 0 60-26.863281 60-60v-30h-60zm0 0"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m156.25 271 53.578125 150h30.34375l53.578125-150h-2.539062l-45 45 19.394531 19.394531-21.210938 21.210938-19.394531-19.394531-19.394531 19.394531-21.210938-21.210938 19.394531-19.394531-45-45zm0 0"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m98.789062 271-68.789062 38.789062v111.210938h60v-60h30v60h58.039062l-53.574218-150zm0 0"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m0 451h420v61h-420zm0 0"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m450 150c-16.570312 0-30 13.429688-30 30v31h60v-31c0-16.570312-13.429688-30-30-30zm0 0"/>
+
+    </symbol>
+    </svg>
+        
+    <header class = "header">
+        <div class="new-container header-land flex-block" itemscope itemtype="http://schema.org/Organization">
+            <div class="header-land__logo flex-block">
+                <a href="/land/" class="logo__img header-land__logo--img" itemprop="url"></a>
+                <div class="header-land__auction" itemprop="description" content="Автомобильный аукцион">Автомобильный<br>аукцион</div>
+            </div>
+            <div class="mob-hamburger"><span class="mob-hamburger__center-stripe"></span></div>
+            <div class="header-land__nav-block flex-block">
+                <nav class="nav">
+                    <a href="#top-block" anchor="yes" class="nav__item">Описание</a>
+                    <a href="#instruction" anchor="yes" class="nav__item">Инструкция</a>
+                    <a href="#how-much" anchor="yes" class="nav__item">Стоимость</a>
+                    <a href="#about-company" anchor="yes" class="nav__item">ТрансТехСервис</a>
+                </nav>
+                <div class="nav-btn">
+                    <a class="nav-btn__item come-in" href="#"><span>Вход</span></a>
+                    <span> / </span>
+                    <a class="nav-btn__item registration" href="#"><span>Регистрация</span></a>
+                </div>
+            </div>
+           
+        </div>
+    </header>
+    <main>
+        <section class="grey top" id="top-block">
+                <div class="new-container top-block offer-block flex-block">
+                    <div class="offer-block__description">
+                        <h3 class="offer-block__description--title" >Аукцион автомобилей с пробегом в ТрансТехСервис</h3>
+                        <div class="offer-block__description--text">
+                                Приветствуем Вас на специализированной
+                                площадке крупнейшего регионального
+                                автодилера. Представляем вам интернет-
+                                аукцион, разработанный для
+                                профессиональных покупателей
+                        </div>
+                        <div class="offer-block-buttons flex-block">
+                                <a href="#" class="btn btn-blue offer-button">Войти</a>
+                                <a href="#" class="btn btn-white offer-button">Зарегистрироваться</a>
+                                <a href="https://www.tts.ru/" class="btn btn-white offer-button">Перейти на tts.ru</a>
+                        </div>
+                    </div>
+                    <div class="offer-block__img">
+                            <div class="offer-block__img--image" style="background-image: url(./img/auction_img.jpg)"></div>
+                    </div>
+                </div>
+        </section>
+        <section class="white">
+            <div class="new-container advantages-block">
+                <h3 class="advantages-block__title">Преимущества покупки через аукцион</h3>
+                <div class="advantages-block__block bounce-block flex-block">
+                    <div class="bounce-block__single flex-block">
+                        <div class="bounce-block__single--group flex-block">
+                            <div class="bounce1 flex-block">
+                                <div class="bounce2 flex-block">
+                                    <div class="bounce3 flex-block ">1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bounce-block__single--text">Проверенная<br>информация</div>
+                    </div>
+                    <div class="bounce-block__single flex-block">
+                        <div class="bounce-block__single--group flex-block">
+                            <div class="bounce1 flex-block">
+                                <div class="bounce2 flex-block">
+                                    <div class="bounce3 flex-block ">2</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bounce-block__single--text">Надежность<br>выбора</div>
+                    </div>
+                    <div class="bounce-block__single flex-block">
+                            <div class="bounce-block__single--group flex-block">
+                                <div class="bounce1 flex-block">
+                                    <div class="bounce2 flex-block">
+                                        <div class="bounce3 flex-block ">3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bounce-block__single--text">Открытые<br>коммуникации</div>
+                        </div>
+                        <div class="bounce-block__single flex-block">
+                                <div class="bounce-block__single--group flex-block">
+                                    <div class="bounce1 flex-block">
+                                        <div class="bounce2 flex-block">
+                                            <div class="bounce3 flex-block ">4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bounce-block__single--text">Комфортное<br>заключение сделки</div>
+                            </div>
+                </div>
+                <span class="advantages-block__subtitle">Удобство покупки автомобилей на выгодных условиях в один клик.</span>
+            </div>
+        </section>
+        <section class="grey" id="instruction">
+                <div class = "new-container begin-use">
+                    <h3 class="begin-use__title">Как начать пользоваться аукционом</h3>
+                    <div class="begin-use__block flex-block">
+                        <div class="begin-use__block--single flex-block">
+                            <div class="icon">
+                                <span class="visually-hidden">Зарегистрироваться</span>
+                                <svg class="icon-svg" width="80.13px" height="80.13px">
+                                    <use xlink:href="#register-user"></use>
+                                </svg>
+                            </div>
+                            <div class="description">Зарегистрируйтесь в системе, укажите данные вашего юридического лица</div>
+                        </div>
+                        <div class="begin-use__block--single flex-block">
+                                <div class="icon">
+                                        <span class="visually-hidden">Дождатьтся ответа</span>
+                                        <svg class="icon-svg" width="80.13px" height="80.13px">
+                                            <use xlink:href="#support-answer"></use>
+                                        </svg>
+                                    </div>
+                                <div class="description">Дождитесь ответа службы поддержки, чтобы получить решение по договору</div>
+                            </div>
+                            <div class="begin-use__block--single flex-block">
+                                    <div class="icon">
+                                        <span class="visually-hidden">Зарегистрироваться</span>
+                                        <svg class="icon-svg" width="80.13px" height="80.13px">
+                                            <use xlink:href="#start-auction"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="description">Приступайте к торгам в удобном для вас режимах - ручном, либо автоматическом</div>
+                                </div>
+                    </div>
+                </div>
+            </section>
+            <section class="white" id="how-much">
+                    <div class="new-container how-much">
+                        <h3 class="how-much__title">Сколько стоит участие в аукционе?</h3>
+                        <div class="how-much__description">
+                                Участие в аукционе абсолютно бесплатное. Вы платите только за автомобиль, выигранный в
+                                процессе аукционных торгов. Покупать проверенные автомобили в компании
+                                ТрансТехСервис комфортно!
+                        </div>
+                    </div>
+                </section>
+            <section class="white">
+                    <div class="new-container auto-options">
+                        <h3 class="auto-options__title">Автомобили в ТрансТехСервис:</h3>
+                        <div class="auto-options__block flex-block">
+                            <div class="auto-options__block--single"><span class="background flex-block">проходят полную техническую проверку</span></div>
+                            <div class="auto-options__block--single"><span class="background flex-block">продаются с гарантией юридической чистоты</div>
+                            <div class="auto-options__block--single"><span class="background flex-block">проходят проверку лакокрасочного покрытия</span></div>
+                            <div class="auto-options__block--single"><span class="background flex-block">содержат достоверные технические характеристики и подробные фотографии</span></div>
+                        </div>
+                        <span class="auto-options__subtitle">На все наши автомобили распространяется возможность возможность обмена или возврата
+                                денежных средств, если автомобиль не соответствует заявленному описанию в течение 7
+                                дней.</span>
+                    </div>
+            </section>
+        <section class="grey" id="about-company">
+            <div class="new-container about-company offer-block flex-block">
+                <div class="offer-block__img">
+                    <div class="offer-block__img--image" style="background-image: url(./img/about-company.jpg)"></div>
+                </div>
+                <div class="offer-block__description">
+                    <h3 class="offer-block__description--title" itemprop="name">ТрансТехСервис - абсолютный региональный лидер по продажам автомобилей</h3>
+                    <div class="offer-block__description--text" itemprop="description">
+                            Компания ТрансТехСервис на рынке с 1992 года. Специализируется в области реализации и технического обслуживания автомобилей.
+                    </div>
+                    <div class="offer-block__description--list">
+                        <ul class="company-count flex-block">
+                            <li class="company-count__li">
+                                <span class = "count">19</span>
+                                <span class = "count-text">автомобильных брендов</span>
+                            </li>
+                            <li class="company-count__li">
+                                <span class = "count">104</span>
+                                <span class = "count-text">автоцентра</span>
+                            </li>
+                            <li class="company-count__li">
+                                <span class = "count">93,5 млрд.</span>
+                                <span class = "count-text">оборот компании в 2018 г.</span>
+                            </li>
+                            <li class="company-count__li">
+                                <span class = "count">59 тыс.</span>
+                                <span class = "count-text">новых авто продано в 2018 г.</span>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="white">
+            <div class="new-container address-salon">
+                <h3 class="address-salon__title">Автоцентры ТрансТехСервис</h3> 
+                <div class="address-salon__block flex-block">
+                    <div class="address-salon__block--location">
+                        <div class="background-location flex-block">
+                            <div class="address__city--select">
+                            <select class="select-default select-city">
+                                <option>Выберите город</option>
+                                <option>Казань</option>
+                                <option>Набережные челны</option>
+                                <option>Чебоксары</option>
+                             </select>
+                            </div>
+                             <div class="cities-block">
+                                 <div class="cities-block__city">
+                                     <div class="city-address">Казань, ул. Декабристов, 96</div>
+                                     <div class="city-autosalon-info flex-block">
+                                         <span class="title">Автосaлон</span>
+                                         <div class="work-time flex-block">
+                                            <div class="work-time__full flex-block">
+                                                <span class="day">пн-сб:</span>
+                                                <span class="clock-interval">08:00-19:00</span>
+                                            </div>
+                                            <div class="work-time__midi flex-block">
+                                                <span class="day">вс:</span>
+                                                <span class="clock-interval">09:00-17:00</span>
+                                            </div>
+                                        </div>
+                                         <div class="phone no-number flex-block">
+                                             <span class="phone-number">+7 (8552) 91-**-**</span>
+                                             <a href="#" class="view-phone">Показать номер</a>
+                                         </div>
+                                         <a href="tel: +7(8552)919292" class="phone-btn__mobile">позвонить в автосалон</a>
+                                     </div>
+                                     <div class="city-autosalon-info flex-block">
+                                        <span class="title">Автосервис</span>
+                                        <div class="work-time flex-block">
+                                           <div class="work-time__full flex-block">
+                                               <span class="day">пн-сб:</span>
+                                               <span class="clock-interval">08:00-19:00</span>
+                                           </div>
+                                           <div class="work-time__midi flex-block">
+                                               <span class="day">вс:</span>
+                                               <span class="clock-interval">09:00-17:00</span>
+                                           </div>
+                                       </div>
+                                        <div class="phone flex-block">
+                                            <span class="phone-number">+7 (8552) 91-05-62</span>
+                                        </div>
+                                        <a href="tel: +7(8552)919292" class="phone-btn__mobile">позвонить в автосервис</a>
+                                    </div>
+                                 </div>
+                                 <div class="cities-block__city">
+                                    <div class="city-address">Казань, ул. Декабристов, 96</div>
+                                    <div class="city-autosalon-info flex-block">
+                                        <span class="title">Автосaлон</span>
+                                        <div class="work-time flex-block">
+                                           <div class="work-time__full flex-block">
+                                               <span class="day">пн-сб:</span>
+                                               <span class="clock-interval">08:00-19:00</span>
+                                           </div>
+                                           <div class="work-time__midi flex-block">
+                                               <span class="day">вс:</span>
+                                               <span class="clock-interval">09:00-17:00</span>
+                                           </div>
+                                       </div>
+                                        <div class="phone no-number flex-block">
+                                            <span class="phone-number">+7 (8552) 91-**-**</span>
+                                            <a href="#" class="view-phone">Показать номер</a>
+                                        </div>
+                                        <a href="tel: +7(8552)919292" class="phone-btn__mobile">позвонить в автосалон</a>
+                                    </div>
+                                    <div class="city-autosalon-info flex-block">
+                                       <span class="title">Автосервис</span>
+                                       <div class="work-time flex-block">
+                                          <div class="work-time__full flex-block">
+                                              <span class="day">пн-сб:</span>
+                                              <span class="clock-interval">08:00-19:00</span>
+                                          </div>
+                                          <div class="work-time__midi flex-block">
+                                              <span class="day">вс:</span>
+                                              <span class="clock-interval">09:00-17:00</span>
+                                          </div>
+                                      </div>
+                                       <div class="phone flex-block">
+                                           <span class="phone-number">+7 (8552) 91-05-62</span>
+                                       </div>
+                                       <a href="tel: +7(8552)919292" class="phone-btn__mobile">позвонить в автосервис</a>
+                                   </div>
+                                </div>
+                                <div class="cities-block__city">
+                                    <div class="city-address">Казань, ул. Декабристов, 96</div>
+                                    <div class="city-autosalon-info flex-block">
+                                        <span class="title">Автосaлон</span>
+                                        <div class="work-time flex-block">
+                                           <div class="work-time__full flex-block">
+                                               <span class="day">пн-сб:</span>
+                                               <span class="clock-interval">08:00-19:00</span>
+                                           </div>
+                                           <div class="work-time__midi flex-block">
+                                               <span class="day">вс:</span>
+                                               <span class="clock-interval">09:00-17:00</span>
+                                           </div>
+                                       </div>
+                                        <div class="phone no-number flex-block">
+                                            <span class="phone-number">+7 (8552) 91-**-**</span>
+                                            <a href="#" class="view-phone">Показать номер</a>
+                                        </div>
+                                        <a href="tel: +7(8552)919292" class="phone-btn__mobile">позвонить в автосалон</a>
+                                    </div>
+                                    <div class="city-autosalon-info flex-block">
+                                       <span class="title">Автосервис</span>
+                                       <div class="work-time flex-block">
+                                          <div class="work-time__full flex-block">
+                                              <span class="day">пн-сб:</span>
+                                              <span class="clock-interval">08:00-19:00</span>
+                                          </div>
+                                          <div class="work-time__midi flex-block">
+                                              <span class="day">вс:</span>
+                                              <span class="clock-interval">09:00-17:00</span>
+                                          </div>
+                                      </div>
+                                       <div class="phone flex-block">
+                                           <span class="phone-number">+7 (8552) 91-05-62</span>
+                                       </div>
+                                       <a href="tel: +7(8552)919292" class="phone-btn__mobile">позвонить в автосервис</a>
+                                   </div>
+                                </div>
+                                <div class="cities-block__city">
+                                    <div class="city-address">Казань, ул. Декабристов, 96</div>
+                                    <div class="city-autosalon-info flex-block">
+                                        <span class="title">Автосaлон</span>
+                                        <div class="work-time flex-block">
+                                           <div class="work-time__full flex-block">
+                                               <span class="day">пн-сб:</span>
+                                               <span class="clock-interval">08:00-19:00</span>
+                                           </div>
+                                           <div class="work-time__midi flex-block">
+                                               <span class="day">вс:</span>
+                                               <span class="clock-interval">09:00-17:00</span>
+                                           </div>
+                                       </div>
+                                        <div class="phone no-number flex-block">
+                                            <span class="phone-number">+7 (8552) 91-**-**</span>
+                                            <a href="#" class="view-phone">Показать номер</a>
+                                        </div>
+                                        <a href="tel: +7(8552)919292" class="phone-btn__mobile">позвонить в автосалон</a>
+                                    </div>
+                                    <div class="city-autosalon-info flex-block">
+                                       <span class="title">Автосервис</span>
+                                       <div class="work-time flex-block">
+                                          <div class="work-time__full flex-block">
+                                              <span class="day">пн-сб:</span>
+                                              <span class="clock-interval">08:00-19:00</span>
+                                          </div>
+                                          <div class="work-time__midi flex-block">
+                                              <span class="day">вс:</span>
+                                              <span class="clock-interval">09:00-17:00</span>
+                                          </div>
+                                      </div>
+                                       <div class="phone flex-block">
+                                           <span class="phone-number">+7 (8552) 91-05-62</span>
+                                       </div>
+                                       <a href="tel: +7(8552)919292" class="phone-btn__mobile">позвонить в автосервис</a>
+                                   </div>
+                                </div>
+                                <div class="cities-block__city--allsities-view">
+                                    <a class="link">Показать ещё</a>
+                                </div> 
+                             </div>
+                        </div>
+                    </div>
+                    <div class="address-salon__block--map">
+                        <img src="./img/map.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="white">
+            <div class="new-container">
+                <span class="micro-text">
+                    **Кредит предоставляется «БМВ Банк» ООО. Лицензия Банка России №3482 от 10.06.2013. Условия программы кредитования «Надежность»: первоначальный взнос – не менее 65% от стоимости автомобиля, процентная ставка по кредиту в рублях РФ — 5,1% при сроке кредита 12 месяцев (для автомобилей BMW 3 серии (G20) первоначальный взнос не менее 15% (10% при приобретении полиса КАСКО по программе «BMW Страхование»)); первоначальный взнос — не менее 50% от стоимости автомобиля процентные ставки по кредиту в рублях РФ — 9,5% при сроке 13-60 месяцев. Размеры остаточных платежей от стоимости автомобиля: 55% (12–24 мес.), 50% (36 мес.), 40% (48 мес.), 30% (60 мес.). Минимальная сумма кредита — 200 000 рублей РФ. Максимальная сумма кредита — 8 500 000 рублей РФ. Обязательно наличие полиса КАСКО. Обязательное страхование заемщиком жизни и здоровья путем присоединения к договору коллективного страхования жизни по программе страхования «Премиум», либо заключения договора личного страхования на условиях, сопоставимых с условиями программы страхования «Премиум» и описанных в Требованиях Банка к страховым компаниям и общим условиям предоставления страховых услуг. Программа распространяется на новые автомобили BMW 1 серии, BMW 3 серии, BMW 4 серии, BMW 5 серии, BMW 6 Гран Туризмо, BMW 8 серия, BMW X1, BMW X2 , BMW X3, BMW X4, BMW X5, BMW X6, Х7, BMW 3 серии Гран Туризмо, BMW М серии (кроме М5). Программа действует с 1 апреля по 30 июня 2019 года. Подробная информация на сайте www.bmwbank.ru. Настоящая информация не является офертой к заключению договора.
+                </span>
+            </div>
+        </section>
+    </main>
+    <footer class="grey footer-section">
+            <div class="new-container footer-auction flex-block" itemscope itemtype="http://schema.org/Organization">
+                <div class="footer-land__logo flex-block">
+                    <a href="/land/" class="logo__img footer-land__logo--img" itemprop="url"></a>
+                    <div class="footer-land__auction" itemprop="description" content="Автомобильный аукцион">Автомобильный <br>аукцион</div>
+                </div>
+                <div class="footer-tel flex-block">
+                    <span>Телефон для справок:</span>
+                    <a class="footer-tel__href" href="tel:+7(8552)910562">+7 (8552) 91-05-62</a>
+                </div>
+            </div>
+    </footer>
+    <a href="#" class="top-button"></a>
+                                                  
+    <!--Jquery 3.3.1-->
+    <script src="./js/librarys/jquery-3.3.1.min.js"></script>
+    <!--Select2 JS-->
+    <script src="./js/plugins/select2.min.js"></script>
+     <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <!--Scrollbar JS-->
+    <script src="./js/plugins/jquery.custom-scrollbar.js"></script>
+    <!--Custom JS-->
+    <script src="./js/custom.js"></script>
+
+</body>
+
+
+</html>
